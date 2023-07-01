@@ -88,12 +88,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
         </ul>
       </div>
     </header>
@@ -115,12 +115,62 @@
         <div id="main" class="pjax">
           
   <div class="index wrap">
+      <h2 class="divider">置顶文章</h2>
+      <div class="segments sticky">
+          
+<article class="item">
+  <div class="cover">
+    <a href="/posts/9a43ef1.html" itemprop="url" title="X86 openwrt 如何将 CPU 模式设置为性能"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2023-07-01 14:20:27">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2023-07-01T14:20:27+08:00">2023-07-01</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.5k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 分钟</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/9a43ef1.html" itemprop="url" title="X86 openwrt 如何将 CPU 模式设置为性能">X86 openwrt 如何将 CPU 模式设置为性能</a></h3>
+    <div class="excerpt">
+        # 简述
+很多人在编译后或者好不容易拿到符合自己需求的系统包后，体验一直上不去，甚至有些使用 j1900CPU 感觉还不如硬件路由
+例如，开网页加载慢半拍、视频加载速度上不去的感觉（特别是油管），很大的原因都是由省电模式导致的。
+CPU 频率在编译后，不做优化的情况下。
+性能模式一直是省电模式运行，特别对于硬件配置低、或高配硬件达不到应有体验
+实例：处理器： 英特尔（R） 赛扬（R） J4125 CPU @ 2.00GHz
+# 通过
+命令查询当前频率
+cat /proc/cpuinfo |grep MHz|uniq# 结果
+为
+cpu MHz : 1201.146cpu MHz :...
+    </div>
+    <a href="/posts/9a43ef1.html" itemprop="url" title="X86 openwrt 如何将 CPU 模式设置为性能" class="btn">more...</a>
+  </div>
+</article>
+
+      </div>
     <h2 class="divider">文章列表</h2>
     <div class="segments posts">
         
 <article class="item">
   <div class="cover">
-    <a href="/uncategorized/hello-world.html" itemprop="url" title="Hello World"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></a>
+    <a href="/posts/4a17b156.html" itemprop="url" title="Hello World"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giciuv0socj20zk0m8qes.jpg"></a>
   </div>
   <div class="info">
     
@@ -146,7 +196,7 @@
   </span>
 </div>
 
-    <h3><a href="/uncategorized/hello-world.html" itemprop="url" title="Hello World">Hello World</a></h3>
+    <h3><a href="/posts/4a17b156.html" itemprop="url" title="Hello World">Hello World</a></h3>
     <div class="excerpt">
         Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 # Quick Start
@@ -155,7 +205,7 @@ h$ hexo new &quot;My New Post&quot;More info: Writing
 # Run server
 h$...
     </div>
-    <a href="/uncategorized/hello-world.html" itemprop="url" title="Hello World" class="btn">more...</a>
+    <a href="/posts/4a17b156.html" itemprop="url" title="Hello World" class="btn">more...</a>
   </div>
 </article>
 
@@ -189,7 +239,7 @@ h$...
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">1</span>
+        <span class="count">2</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -272,7 +322,16 @@ h$...
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/uncategorized/hello-world.html" title="Hello World">Hello World</a></span>
+    <span><a href="/posts/4a17b156.html" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/9a43ef1.html" title="X86 openwrt 如何将 CPU 模式设置为性能">X86 openwrt 如何将 CPU 模式设置为性能</a></span>
   </li>
 
   </ul>
@@ -297,13 +356,13 @@ h$...
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">0k 字</span>
+    <span title="站点总字数">2k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
