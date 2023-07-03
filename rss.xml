@@ -1,17 +1,26 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>BLOG</title>
-        <subtitle></subtitle>
+        <title>旺笔迹</title>
+        <subtitle>傀儡师の后院</subtitle>
         <icon>https://msmkls.github.io/images/favicon.ico</icon>
         <link>https://msmkls.github.io</link>
         <author>
           <name>KLS</name>
         </author>
-        <description></description>
+        <description>日常学习,点滴记录，分享软硬件食用方法，家庭多媒体中心搭建和设置等各种教程</description>
         <language>zh-CN</language>
         <pubDate>Sat, 01 Jul 2023 21:13:18 +0800</pubDate>
         <lastBuildDate>Sat, 01 Jul 2023 21:13:18 +0800</lastBuildDate>
+        <category term="NAS" />
+        <category term="群晖" />
+        <category term="openwrt" />
+        <category term="服务器" />
+        <category term="emby" />
+        <category term="plex" />
+        <category term="青龙面板" />
+        <category term="软件食用" />
+        <category term="飞机场推荐" />
         <item>
             <guid isPermalink="true">https://msmkls.github.io/posts/9a43ef1.html</guid>
             <title>X86 openwrt 如何将 CPU 模式设置为性能</title>

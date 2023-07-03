@@ -1,14 +1,23 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://msmkls.github.io</id>
-    <title>BLOG</title>
-    <subtitle></subtitle>
+    <title>旺笔迹</title>
+    <subtitle>傀儡师の后院</subtitle>
     <icon>https://msmkls.github.io/images/favicon.ico</icon>
     <link href="https://msmkls.github.io" />
     <author>
       <name>KLS</name>
     </author>
     <updated>2023-07-01T13:13:18.802Z</updated>
+    <category term="NAS" />
+    <category term="群晖" />
+    <category term="openwrt" />
+    <category term="服务器" />
+    <category term="emby" />
+    <category term="plex" />
+    <category term="青龙面板" />
+    <category term="软件食用" />
+    <category term="飞机场推荐" />
     <entry>
         <id>https://msmkls.github.io/posts/9a43ef1.html</id>
         <title>X86 openwrt 如何将 CPU 模式设置为性能</title>
