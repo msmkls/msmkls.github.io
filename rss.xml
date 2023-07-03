@@ -79,7 +79,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;常见问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见问题&#34;&gt;#&lt;/a&gt; &lt;strong&gt;常见问题&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;安装部署后报错&lt;/strong&gt;  &lt;code&gt;Error response from daemon: Get https://registry-1.docker.io/v2/: Docker&lt;/code&gt;  之类的 **：**&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装部署后报错&lt;/strong&gt;  &lt;code&gt;Error response from daemon: Get https://registry-1.docker.io/v2/: Docker&lt;/code&gt;  之类的：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;重新执行该命令重试，有时候是受代理环境或者网络原因造成的&lt;/li&gt;
 &lt;li&gt;排除 DNS 解析的问题&lt;/li&gt;
