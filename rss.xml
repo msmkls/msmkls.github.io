@@ -63,7 +63,7 @@
 &lt;li&gt;Ps: 可以通过 &lt;code&gt;df -h&lt;/code&gt;  命令查看宿主的挂载点，结合使用，例如我要挂载到 &lt;code&gt;/mnt&lt;/code&gt;  这个目录下，挂载点在 &lt;code&gt;/&lt;/code&gt;  目录下所以命令是上面的 &lt;code&gt;mount --make-shared /&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;如果过挂在成功把上面这条命令加到开机执行，不然主机重启会导致挂载失败&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://blog.kls.red/usr/uploads/2022/11/344447154.png&#34;&gt;&lt;img data-src=&#34;https://img.kls.red/i/2023/07/03/slfohf-0.jpeg&#34; alt=&#34;image.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img.kls.red/i/2023/07/03/zbf0gi-0.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;如果挂载到其他目录下面，把下面 &lt;code&gt;/mnt&lt;/code&gt;  的路径 替换成你自己的即可&lt;/p&gt;
