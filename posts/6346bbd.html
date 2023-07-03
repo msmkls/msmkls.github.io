@@ -24,12 +24,15 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/msmkls/msmkls.github.io@latest/css/app.css?v=0.2.5">
 
   
-
-<link rel="canonical" href="https://msmkls.github.io/about/">
-
+  <meta name="keywords" content="clouddrive,Linux" />
 
 
-  <title>关于 |
+<link rel="canonical" href="https://msmkls.github.io/posts/6346bbd.html">
+
+
+
+  <title>
+clouddrive在linux（云主机/vps）下挂载过程 |
 傀儡师の后院 = 旺笔迹 = 傀儡师の后院</title>
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -57,8 +60,34 @@
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">关于
+  <h1 itemprop="name headline">clouddrive在linux（云主机/vps）下挂载过程
   </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-07-03 17:12:24">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-07-03T17:12:24+08:00">2023-07-03</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>1.8k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
 
           </div>
         </div>
@@ -89,11 +118,11 @@
       <div id="imgs" class="pjax">
         <ul>
           <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=赛马娘"></li>
-          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=原神"></li>
-          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?图片系列=动漫综合1"></li>
+          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=缘之空"></li>
+          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?图片系列=动漫综合2"></li>
           <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?图片系列=猫娘1"></li>
-          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=缘之空"></li>
-          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=缘之空"></li>
+          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=赛马娘"></li>
+          <li class="item" data-background-image="https://api.r10086.com/樱道随机图片api接口.php?图片系列=动漫综合1"></li>
         </ul>
       </div>
     </header>
@@ -114,9 +143,15 @@
       <div class="inner">
         <div id="main" class="pjax">
           
-  <div class="page wrap">
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://msmkls.github.io/about/index.html">
+  <link itemprop="mainEntityOfPage" href="https://msmkls.github.io/posts/6346bbd.html">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="//cdn.jsdelivr.net/gh/msmkls/msmkls.github.io@latest/images/avatar.jpg">
@@ -131,7 +166,84 @@
   <div class="body md" itemprop="articleBody">
     
 
-    
+    <h2 id="基本环境"><a class="markdownIt-Anchor" href="#基本环境">#</a> <strong>基本环境</strong></h2>
+<h3 id="ps"><a class="markdownIt-Anchor" href="#ps">#</a> <strong>ps：</strong></h3>
+<ul>
+<li>VPS（这里指的是网站服务器）或者本地计算机、虚拟机下的 linux 系统：Ubuntu、centos、Debian… 等 借助工具：docker （这里以宝塔面板为基础的图形界面，虽然熟悉后不怎么用，但方便初接触者）</li>
+<li>挂载到网站服务器上，clouddrive 不像其他挂载工具那样，只是分享下载，clouddrive 更纯粹，你可以把它理解成真实的硬盘，如果你 PHP 基础比较好，可以结合给视频站或下载站等使用，这里不多做赘述。</li>
+<li>这里有个问题挂载服务器应当遵守网盘使用条款使用，如果把阿里云盘挂载到其他国家的云服务器上，可能会触发账号的使用机制，阿里云盘条款不允许国外使用，如果在国外云主机使用可能会刷不出来二维码或登录不上，像 115 网盘可能会触发异地登录等风险，只要在国内包括香港，都没什么大问题）</li>
+</ul>
+<p>以下演示仅供初步接触者参考使用，大佬请略过即可，较真抬杠的请进群找大佬们，谢谢支持！</p>
+<h3 id="docker项目地址"><a class="markdownIt-Anchor" href="#docker项目地址">#</a> <strong>Docker 项目地址</strong></h3>
+<ul>
+<li>
+<p><span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmU=">cloudnas/clouddrive</span></p>
+</li>
+<li>
+<p><span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmUyLXVuc3RhYmxl">clouddrive2-unstable</span></p>
+</li>
+</ul>
+<h3 id="docker部署命令"><a class="markdownIt-Anchor" href="#docker部署命令">#</a> <strong>Docker 部署命令</strong></h3>
+<ol>
+<li>根据 clouddrive 的命令，在 ssh 输入命令</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /etc/systemd/system/docker.service.d/</pre></td></tr></table></figure><ul>
+<li>接着</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">cat</span> <span class="token operator">&lt;&lt;</span><span class="token string">EOF<span class="token bash punctuation"> <span class="token operator">></span> /etc/systemd/system/docker.service.d/clear_mount_propagation_flags.conf</span></pre></td></tr><tr><td data-num="2"></td><td><pre>[Service]</pre></td></tr><tr><td data-num="3"></td><td><pre>MountFlags=shared</pre></td></tr><tr><td data-num="4"></td><td><pre>EOF</span></pre></td></tr></table></figure><ul>
+<li>PS：执行完，没有任何提示就对了！</li>
+</ul>
+<ol>
+<li>拉取 clouddrive 镜像部署</li>
+</ol>
+<p>命令是结合 Ubuntu、centos、Debian 的相通目录结构 选择的目录为： <code>/mnt</code>  下 进行部署 为主机中的映射卷启用共享挂载 <code>mount --make-shared /</code></p>
+<figure class="highlight css"><figcaption data-lang="CSS"></figcaption><table><tr><td data-num="1"></td><td><pre>mount --make-shared /</pre></td></tr></table></figure><ul>
+<li>Ps: 可以通过 <code>df -h</code>  命令查看宿主的挂载点，结合使用，例如我要挂载到 <code>/mnt</code>  这个目录下，挂载点在 <code>/</code>  目录下所以命令是上面的 <code>mount --make-shared /</code></li>
+<li>如果过挂在成功把上面这条命令加到开机执行，不然主机重启会导致挂载失败</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://blog.kls.red/usr/uploads/2022/11/344447154.png"><img data-src="https://img.kls.red/i/2023/07/03/slfohf-0.jpeg" alt="image.png"></a></p>
+<ul>
+<li>
+<p>如果挂载到其他目录下面，把下面 <code>/mnt</code>  的路径 替换成你自己的即可</p>
+<p><strong>CD1：</strong></p>
+</li>
+</ul>
+<figure class="highlight lua"><figcaption data-lang="lua"></figcaption><table><tr><td data-num="1"></td><td><pre>docker run <span class="token operator">-</span>d \</pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token comment">--name clouddrive \</span></pre></td></tr><tr><td data-num="3"></td><td><pre>      <span class="token comment">--restart unless-stopped \</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token operator">-</span>v <span class="token operator">/</span>mnt<span class="token operator">/</span>CloudNAS<span class="token punctuation">:</span><span class="token operator">/</span>CloudNAS<span class="token punctuation">:</span>shared \</pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token operator">-</span>v <span class="token operator">/</span>mnt<span class="token operator">/</span>Config<span class="token punctuation">:</span><span class="token operator">/</span>Config \</pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token comment">--network host \</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token comment">--pid host \</span></pre></td></tr><tr><td data-num="8"></td><td><pre>     <span class="token comment">--privileged \</span></pre></td></tr><tr><td data-num="9"></td><td><pre>     <span class="token comment">--device /dev/fuse:/dev/fuse \</span></pre></td></tr><tr><td data-num="10"></td><td><pre>     cloudnas<span class="token operator">/</span>clouddrive</pre></td></tr></table></figure><p><strong>CD2：</strong></p>
+<figure class="highlight lua"><figcaption data-lang="lua"></figcaption><table><tr><td data-num="1"></td><td><pre>docker run <span class="token operator">-</span>d \</pre></td></tr><tr><td data-num="2"></td><td><pre>      <span class="token comment">--name clouddrive \</span></pre></td></tr><tr><td data-num="3"></td><td><pre>      <span class="token comment">--restart unless-stopped \</span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token comment">--env CLOUDDRIVE_HOME=/Config \</span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token operator">-</span>v <span class="token operator">/</span>mnt<span class="token operator">/</span>CloudNAS<span class="token punctuation">:</span><span class="token operator">/</span>CloudNAS<span class="token punctuation">:</span>shared \</pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token operator">-</span>v <span class="token operator">/</span>mnt<span class="token operator">/</span>Config<span class="token punctuation">:</span><span class="token operator">/</span>Config \</pre></td></tr><tr><td data-num="7"></td><td><pre>      <span class="token comment">--network host \</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token comment">--pid host \</span></pre></td></tr><tr><td data-num="9"></td><td><pre>     <span class="token comment">--privileged \</span></pre></td></tr><tr><td data-num="10"></td><td><pre>     <span class="token comment">--device /dev/fuse:/dev/fuse \</span></pre></td></tr><tr><td data-num="11"></td><td><pre>     cloudnas<span class="token operator">/</span>clouddrive2<span class="token operator">-</span>unstable</pre></td></tr></table></figure><ul>
+<li>
+<p>执行之后没报错就说明部署成功了</p>
+<p>CD1 入口 IP:9798</p>
+<p>CD2 入口 IP:19798</p>
+</li>
+</ul>
+<h3 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题">#</a> <strong>常见问题</strong></h3>
+<p><strong>安装部署后报错</strong>  <code>Error response from daemon: Get https://registry-1.docker.io/v2/: Docker</code>  之类的 **：**</p>
+<ol>
+<li>重新执行该命令重试，有时候是受代理环境或者网络原因造成的</li>
+<li>排除 DNS 解析的问题</li>
+</ol>
+<p><strong>部署后 ip:9798 无法访问</strong></p>
+<ol>
+<li>一种是防火墙放行指定端口</li>
+<li>暴力的方式是直接关闭防火墙命令</li>
+</ol>
+<ul>
+<li>虚拟机 &amp; 本地 linux 下解决方法： centos：停止 firewall 防火墙</li>
+</ul>
+<figure class="highlight vbnet"><figcaption data-lang="VB.Net"></figcaption><table><tr><td data-num="1"></td><td><pre>systemctl <span class="token keyword">stop</span> firewalld.service</pre></td></tr></table></figure><p>关闭开机启动 firewall 防火墙命令</p>
+<figure class="highlight vbnet"><figcaption data-lang="VB.Net"></figcaption><table><tr><td data-num="1"></td><td><pre>systemctl <span class="token keyword">stop</span> firewalld.service</pre></td></tr></table></figure><ul>
+<li>Ubuntu 关闭防火墙</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">sudo</span> ufw disable</pre></td></tr></table></figure><ul>
+<li>Debian 关闭防火墙</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>/etc/init.d/ufw stop</pre></td></tr></table></figure><p><strong>宝塔面板放行端口，具体百度即可</strong></p>
+<p><strong>vps 服务器可结合上面的方法，或者在安全组中放行 9897 端口，宝塔面板放行该端口</strong></p>
+
+      <div class="tags">
+          <a href="/tags/clouddrive/" rel="tag"><i class="ic i-tag"></i> clouddrive</a>
+          <a href="/tags/Linux/" rel="tag"><i class="ic i-tag"></i> Linux</a>
+      </div>
   </div>
 
    <footer>
@@ -142,9 +254,9 @@
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-07-03 14:16:20" itemprop="dateModified" datetime="2023-07-03T14:16:20+08:00">2023-07-03</time>
+    <time title="修改时间：2023-07-03 17:30:06" itemprop="dateModified" datetime="2023-07-03T17:30:06+08:00">2023-07-03</time>
   </span>
-  <span id="about/" class="item leancloud_visitors" data-flag-title="关于" title="阅读次数">
+  <span id="posts/6346bbd.html" class="item leancloud_visitors" data-flag-title="clouddrive在linux（云主机/vps）下挂载过程" title="阅读次数">
       <span class="icon">
         <i class="ic i-eye"></i>
       </span>
@@ -186,7 +298,7 @@
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://msmkls.github.io/about/index.html" title="关于">https://msmkls.github.io/about/index.html</a>
+    <a href="https://msmkls.github.io/posts/6346bbd.html" title="clouddrive在linux（云主机&#x2F;vps）下挂载过程">https://msmkls.github.io/posts/6346bbd.html</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -200,6 +312,23 @@
 
   </div>
   
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/posts/9a43ef1.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;api.r10086.com&#x2F;樱道随机图片api接口.php?图片系列&#x3D;猫娘1" title="X86 openwrt 如何将 CPU 模式设置为性能">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 食用系列</span>
+  <h3>X86 openwrt 如何将 CPU 模式设置为性能</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
   <div class="wrap" id="comments"></div>
 
 
@@ -212,6 +341,7 @@
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text"> 基本环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ps"><span class="toc-number">1.1.</span> <span class="toc-text"> ps：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="toc-number">1.2.</span> <span class="toc-text"> Docker 项目地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E9%83%A8%E7%BD%B2%E5%91%BD%E4%BB%A4"><span class="toc-number">1.3.</span> <span class="toc-text"> Docker 部署命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">1.4.</span> <span class="toc-text"> 常见问题</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -401,7 +531,7 @@
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'about/',
+    path: 'posts/6346bbd.html',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"

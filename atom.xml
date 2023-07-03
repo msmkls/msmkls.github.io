@@ -8,7 +8,7 @@
     <author>
       <name>KLS</name>
     </author>
-    <updated>2023-07-01T13:13:18.802Z</updated>
+    <updated>2023-07-03T09:12:24.000Z</updated>
     <category term="NAS" />
     <category term="群晖" />
     <category term="openwrt" />
@@ -18,6 +18,88 @@
     <category term="青龙面板" />
     <category term="软件食用" />
     <category term="飞机场推荐" />
+    <entry>
+        <id>https://msmkls.github.io/posts/6346bbd.html</id>
+        <title>clouddrive在linux（云主机/vps）下挂载过程</title>
+        <link rel="alternate" href="https://msmkls.github.io/posts/6346bbd.html"/>
+        <content type="html">&lt;h2 id=&#34;基本环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本环境&#34;&gt;#&lt;/a&gt; &lt;strong&gt;基本环境&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;ps&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ps&#34;&gt;#&lt;/a&gt; &lt;strong&gt;ps：&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;VPS（这里指的是网站服务器）或者本地计算机、虚拟机下的 linux 系统：Ubuntu、centos、Debian… 等 借助工具：docker （这里以宝塔面板为基础的图形界面，虽然熟悉后不怎么用，但方便初接触者）&lt;/li&gt;
+&lt;li&gt;挂载到网站服务器上，clouddrive 不像其他挂载工具那样，只是分享下载，clouddrive 更纯粹，你可以把它理解成真实的硬盘，如果你 PHP 基础比较好，可以结合给视频站或下载站等使用，这里不多做赘述。&lt;/li&gt;
+&lt;li&gt;这里有个问题挂载服务器应当遵守网盘使用条款使用，如果把阿里云盘挂载到其他国家的云服务器上，可能会触发账号的使用机制，阿里云盘条款不允许国外使用，如果在国外云主机使用可能会刷不出来二维码或登录不上，像 115 网盘可能会触发异地登录等风险，只要在国内包括香港，都没什么大问题）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下演示仅供初步接触者参考使用，大佬请略过即可，较真抬杠的请进群找大佬们，谢谢支持！&lt;/p&gt;
+&lt;h3 id=&#34;docker项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker项目地址&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Docker 项目地址&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmU=&#34;&gt;cloudnas/clouddrive&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmUyLXVuc3RhYmxl&#34;&gt;clouddrive2-unstable&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;docker部署命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker部署命令&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Docker 部署命令&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;根据 clouddrive 的命令，在 ssh 输入命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; /etc/systemd/system/docker.service.d/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;接着&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;EOF&lt;span class=&#34;token bash punctuation&#34;&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; /etc/systemd/system/docker.service.d/clear_mount_propagation_flags.conf&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;[Service]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;MountFlags=shared&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;EOF&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;PS：执行完，没有任何提示就对了！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;拉取 clouddrive 镜像部署&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;命令是结合 Ubuntu、centos、Debian 的相通目录结构 选择的目录为： &lt;code&gt;/mnt&lt;/code&gt;  下 进行部署 为主机中的映射卷启用共享挂载 &lt;code&gt;mount --make-shared /&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mount --make-shared /&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;Ps: 可以通过 &lt;code&gt;df -h&lt;/code&gt;  命令查看宿主的挂载点，结合使用，例如我要挂载到 &lt;code&gt;/mnt&lt;/code&gt;  这个目录下，挂载点在 &lt;code&gt;/&lt;/code&gt;  目录下所以命令是上面的 &lt;code&gt;mount --make-shared /&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;如果过挂在成功把上面这条命令加到开机执行，不然主机重启会导致挂载失败&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.kls.red/usr/uploads/2022/11/344447154.png&#34;&gt;&lt;img data-src=&#34;https://img.kls.red/i/2023/07/03/slfohf-0.jpeg&#34; alt=&#34;image.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果挂载到其他目录下面，把下面 &lt;code&gt;/mnt&lt;/code&gt;  的路径 替换成你自己的即可&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CD1：&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight lua&#34;&gt;&lt;figcaption data-lang=&#34;lua&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker run &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;d \&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--name clouddrive \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--restart unless-stopped \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;mnt&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;CloudNAS&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;CloudNAS&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;shared \&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;mnt&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;Config&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;Config \&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--network host \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--pid host \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token comment&#34;&gt;--privileged \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token comment&#34;&gt;--device /dev/fuse:/dev/fuse \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     cloudnas&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;clouddrive&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;CD2：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight lua&#34;&gt;&lt;figcaption data-lang=&#34;lua&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker run &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;d \&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--name clouddrive \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--restart unless-stopped \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--env CLOUDDRIVE_HOME=/Config \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;mnt&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;CloudNAS&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;CloudNAS&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;shared \&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;mnt&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;Config&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;Config \&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--network host \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token comment&#34;&gt;--pid host \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token comment&#34;&gt;--privileged \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token comment&#34;&gt;--device /dev/fuse:/dev/fuse \&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     cloudnas&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;clouddrive2&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;unstable&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;执行之后没报错就说明部署成功了&lt;/p&gt;
+&lt;p&gt;CD1 入口 IP:9798&lt;/p&gt;
+&lt;p&gt;CD2 入口 IP:19798&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;常见问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见问题&#34;&gt;#&lt;/a&gt; &lt;strong&gt;常见问题&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;安装部署后报错&lt;/strong&gt;  &lt;code&gt;Error response from daemon: Get https://registry-1.docker.io/v2/: Docker&lt;/code&gt;  之类的 **：**&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;重新执行该命令重试，有时候是受代理环境或者网络原因造成的&lt;/li&gt;
+&lt;li&gt;排除 DNS 解析的问题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;部署后 ip:9798 无法访问&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一种是防火墙放行指定端口&lt;/li&gt;
+&lt;li&gt;暴力的方式是直接关闭防火墙命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;虚拟机 &amp;amp; 本地 linux 下解决方法： centos：停止 firewall 防火墙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight vbnet&#34;&gt;&lt;figcaption data-lang=&#34;VB.Net&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl &lt;span class=&#34;token keyword&#34;&gt;stop&lt;/span&gt; firewalld.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;关闭开机启动 firewall 防火墙命令&lt;/p&gt;
+&lt;figure class=&#34;highlight vbnet&#34;&gt;&lt;figcaption data-lang=&#34;VB.Net&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl &lt;span class=&#34;token keyword&#34;&gt;stop&lt;/span&gt; firewalld.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;Ubuntu 关闭防火墙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; ufw disable&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;Debian 关闭防火墙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/etc/init.d/ufw stop&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;宝塔面板放行端口，具体百度即可&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;vps 服务器可结合上面的方法，或者在安全组中放行 9897 端口，宝塔面板放行该端口&lt;/strong&gt;&lt;/p&gt;
+</content>
+        <category term="clouddrive" scheme="https://msmkls.github.io/tags/clouddrive/" />
+        <category term="Linux" scheme="https://msmkls.github.io/tags/Linux/" />
+        <updated>2023-07-03T09:12:24.000Z</updated>
+    </entry>
     <entry>
         <id>https://msmkls.github.io/posts/9a43ef1.html</id>
         <title>X86 openwrt 如何将 CPU 模式设置为性能</title>
@@ -56,22 +138,5 @@
         <category term="openwrt" scheme="https://msmkls.github.io/tags/openwrt/" />
         <category term="cpu高频空载模式" scheme="https://msmkls.github.io/tags/cpu%E9%AB%98%E9%A2%91%E7%A9%BA%E8%BD%BD%E6%A8%A1%E5%BC%8F/" />
         <updated>2023-07-01T13:13:18.802Z</updated>
-    </entry>
-    <entry>
-        <id>https://msmkls.github.io/posts/4a17b156.html</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="https://msmkls.github.io/posts/4a17b156.html"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
-</content>
-        <updated>2023-07-01T13:13:18.786Z</updated>
     </entry>
 </feed>
