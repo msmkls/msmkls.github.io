@@ -15,19 +15,19 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="alternate" type="application/rss+xml" title="旺笔迹" href="https://msmkls.github.io/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="旺笔迹" href="https://msmkls.github.io/atom.xml" />
-<link rel="alternate" type="application/json" title="旺笔迹" href="https://msmkls.github.io/feed.json" />
+<link rel="alternate" type="application/rss+xml" title="旺笔迹" href="https://kls.red/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="旺笔迹" href="https://kls.red/atom.xml" />
+<link rel="alternate" type="application/json" title="旺笔迹" href="https://kls.red/feed.json" />
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="clouddrive,Linux" />
+  <meta name="keywords" content="Linux,clouddrive" />
 
 
-<link rel="canonical" href="https://msmkls.github.io/posts/6346bbd.html">
+<link rel="canonical" href="https://kls.red/posts/6346bbd.html">
 
 
 
@@ -117,12 +117,12 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/545e6f6f8db4a66e412bf2c5213d3d10-8980982.jpeg"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/131625-106_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/5g7ey7.jpg"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/wallhaven-r7dxrq.webp"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/20230704071912.png"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/ae23eaf87c243eca94d1200ec5cbee87-8385097.jpeg"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/2642d17296be87c670c540b75c0562b3-2948127.jpeg"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/132a88e4e5cfe7e3847ed93deae688d2.jpg"></li>
           <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/1b59ce0e88c930599448cc34aa74b9ec.jpg"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/5ggg28.jpg"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/2aa73c023b75c094bafdf58d6f171b53-3832759.jpeg"></li>
         </ul>
       </div>
     </header>
@@ -153,7 +153,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://msmkls.github.io/posts/6346bbd.html">
+  <link itemprop="mainEntityOfPage" href="https://kls.red/posts/6346bbd.html">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -168,15 +168,15 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="基本环境"><a class="markdownIt-Anchor" href="#基本环境">#</a> <strong>基本环境</strong></h2>
-<h3 id="ps"><a class="markdownIt-Anchor" href="#ps">#</a> <strong>ps：</strong></h3>
+    <h4 id="基本环境"><a class="markdownIt-Anchor" href="#基本环境">#</a> 基本环境</h4>
+<p><strong>ps：</strong></p>
 <ul>
 <li>VPS（这里指的是网站服务器）或者本地计算机、虚拟机下的 linux 系统：Ubuntu、centos、Debian… 等 借助工具：docker （这里以宝塔面板为基础的图形界面，虽然熟悉后不怎么用，但方便初接触者）</li>
 <li>挂载到网站服务器上，clouddrive 不像其他挂载工具那样，只是分享下载，clouddrive 更纯粹，你可以把它理解成真实的硬盘，如果你 PHP 基础比较好，可以结合给视频站或下载站等使用，这里不多做赘述。</li>
 <li>这里有个问题挂载服务器应当遵守网盘使用条款使用，如果把阿里云盘挂载到其他国家的云服务器上，可能会触发账号的使用机制，阿里云盘条款不允许国外使用，如果在国外云主机使用可能会刷不出来二维码或登录不上，像 115 网盘可能会触发异地登录等风险，只要在国内包括香港，都没什么大问题）</li>
 </ul>
 <p>以下演示仅供初步接触者参考使用，大佬请略过即可，较真抬杠的请进群找大佬们，谢谢支持！</p>
-<h3 id="docker项目地址"><a class="markdownIt-Anchor" href="#docker项目地址">#</a> <strong>Docker 项目地址</strong></h3>
+<h4 id="docker项目地址"><a class="markdownIt-Anchor" href="#docker项目地址">#</a> Docker 项目地址</h4>
 <ul>
 <li>
 <p><span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmU=">cloudnas/clouddrive</span></p>
@@ -185,7 +185,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
 <p><span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmUyLXVuc3RhYmxl">clouddrive2-unstable</span></p>
 </li>
 </ul>
-<h3 id="docker部署命令"><a class="markdownIt-Anchor" href="#docker部署命令">#</a> <strong>Docker 部署命令</strong></h3>
+<h4 id="docker部署命令"><a class="markdownIt-Anchor" href="#docker部署命令">#</a> Docker 部署命令</h4>
 <ol>
 <li>根据 clouddrive 的命令，在 ssh 输入命令</li>
 </ol>
@@ -218,7 +218,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
 <p>CD2 入口 IP:19798</p>
 </li>
 </ul>
-<h3 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题">#</a> <strong>常见问题</strong></h3>
+<h4 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题">#</a> 常见问题</h4>
 <p><strong>安装部署后报错</strong>  <code>Error response from daemon: Get https://registry-1.docker.io/v2/: Docker</code>  之类的：</p>
 <ol>
 <li>重新执行该命令重试，有时候是受代理环境或者网络原因造成的</li>
@@ -243,8 +243,8 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
 <p><strong>vps 服务器可结合上面的方法，或者在安全组中放行 9897 端口，宝塔面板放行该端口</strong></p>
 
       <div class="tags">
-          <a href="/tags/clouddrive/" rel="tag"><i class="ic i-tag"></i> clouddrive</a>
           <a href="/tags/Linux/" rel="tag"><i class="ic i-tag"></i> Linux</a>
+          <a href="/tags/clouddrive/" rel="tag"><i class="ic i-tag"></i> clouddrive</a>
       </div>
   </div>
 
@@ -256,7 +256,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-07-04 01:33:38" itemprop="dateModified" datetime="2023-07-04T01:33:38+08:00">2023-07-04</time>
+    <time title="修改时间：2023-07-04 15:18:17" itemprop="dateModified" datetime="2023-07-04T15:18:17+08:00">2023-07-04</time>
   </span>
   <span id="posts/6346bbd.html" class="item leancloud_visitors" data-flag-title="clouddrive在linux（云主机/vps）下挂载过程" title="阅读次数">
       <span class="icon">
@@ -300,7 +300,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://msmkls.github.io/posts/6346bbd.html" title="clouddrive在linux（云主机&#x2F;vps）下挂载过程">https://msmkls.github.io/posts/6346bbd.html</a>
+    <a href="https://kls.red/posts/6346bbd.html" title="clouddrive在linux（云主机&#x2F;vps）下挂载过程">https://kls.red/posts/6346bbd.html</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -319,7 +319,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
     <div class="item left">
       
 
-  <a href="/posts/9a43ef1.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;msmkls&#x2F;photo@main&#x2F;wallhaven-1kg1w3.webp" title="X86 openwrt 如何将 CPU 模式设置为性能">
+  <a href="/posts/9a43ef1.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;msmkls&#x2F;photo@main&#x2F;2642d17296be87c670c540b75c0562b3-2948127.jpeg" title="X86 openwrt 如何将 CPU 模式设置为性能">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 食用系列</span>
   <h3>X86 openwrt 如何将 CPU 模式设置为性能</h3>
@@ -329,7 +329,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
     <div class="item right">
       
 
-  <a href="/posts/8976dd96.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;msmkls&#x2F;photo@main&#x2F;5g7ey7.jpg" title="Openwrt挂载网盘到本地教程">
+  <a href="/posts/8976dd96.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;msmkls&#x2F;photo@main&#x2F;20230704071747.png" title="Openwrt挂载网盘到本地教程">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 食用系列</span>
   <h3>Openwrt挂载网盘到本地教程</h3>
@@ -351,7 +351,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text"> 基本环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ps"><span class="toc-number">1.1.</span> <span class="toc-text"> ps：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="toc-number">1.2.</span> <span class="toc-text"> Docker 项目地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E9%83%A8%E7%BD%B2%E5%91%BD%E4%BB%A4"><span class="toc-number">1.3.</span> <span class="toc-text"> Docker 部署命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">1.4.</span> <span class="toc-text"> 常见问题</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text"> 基本环境</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#docker%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="toc-number">2.</span> <span class="toc-text"> Docker 项目地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#docker%E9%83%A8%E7%BD%B2%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text"> Docker 部署命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text"> 常见问题</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -392,7 +392,7 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
       <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9ndWktbGVpLXNoaS02" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;gui-lei-shi-6"><i class="ic i-zhihu"></i></span>
       <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTkwMjEyNjA4" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;90212608"><i class="ic i-cloud-music"></i></span>
       <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vd2VpYm9rbHM=" title="https:&#x2F;&#x2F;weibo.com&#x2F;weibokls"><i class="ic i-weibo"></i></span>
-      <a href="https://msmkls.github.io/about" title="https:&#x2F;&#x2F;msmkls.github.io&#x2F;about" class="item about"><i class="ic i-address-card"></i></a>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9tc21rbHMuZ2l0aHViLmlvL2Fib3V0" title="https:&#x2F;&#x2F;msmkls.github.io&#x2F;about"><i class="ic i-address-card"></i></span>
 </div>
 
 <ul class="menu">
@@ -490,6 +490,26 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" title="分类于 食用系列">食用系列</a>
+</div>
+
+    <span><a href="/posts/6346bbd.html" title="clouddrive在linux（云主机&#x2F;vps）下挂载过程">clouddrive在linux（云主机/vps）下挂载过程</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" title="分类于 食用系列">食用系列</a>
+</div>
+
+    <span><a href="/posts/9a43ef1.html" title="X86 openwrt 如何将 CPU 模式设置为性能">X86 openwrt 如何将 CPU 模式设置为性能</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" title="分类于 知识点">知识点</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" title="分类于 系统配置">系统配置</a>
@@ -502,32 +522,12 @@ clouddrive在linux（云主机/vps）下挂载过程 - 食用系列 |
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" title="分类于 食用系列">食用系列</a>
-</div>
-
-    <span><a href="/posts/6346bbd.html" title="clouddrive在linux（云主机&#x2F;vps）下挂载过程">clouddrive在linux（云主机/vps）下挂载过程</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" title="分类于 知识点">知识点</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" title="分类于 系统配置">系统配置</a>
 </div>
 
     <span><a href="/posts/a42a1d2d.html" title="Screen 安装与实际使用命令">Screen 安装与实际使用命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" title="分类于 食用系列">食用系列</a>
-</div>
-
-    <span><a href="/posts/9a43ef1.html" title="X86 openwrt 如何将 CPU 模式设置为性能">X86 openwrt 如何将 CPU 模式设置为性能</a></span>
   </li>
 
       

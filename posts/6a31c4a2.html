@@ -15,9 +15,9 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="alternate" type="application/rss+xml" title="旺笔迹" href="https://msmkls.github.io/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="旺笔迹" href="https://msmkls.github.io/atom.xml" />
-<link rel="alternate" type="application/json" title="旺笔迹" href="https://msmkls.github.io/feed.json" />
+<link rel="alternate" type="application/rss+xml" title="旺笔迹" href="https://kls.red/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="旺笔迹" href="https://kls.red/atom.xml" />
+<link rel="alternate" type="application/json" title="旺笔迹" href="https://kls.red/feed.json" />
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
@@ -27,7 +27,7 @@
   <meta name="keywords" content="Linux,Debian更换国内源" />
 
 
-<link rel="canonical" href="https://msmkls.github.io/posts/6a31c4a2.html">
+<link rel="canonical" href="https://kls.red/posts/6a31c4a2.html">
 
 
 
@@ -76,7 +76,7 @@ Debian 10/11更换国内源，解决系统无法更新问题 - 系统配置 - �
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>469</span>
+    <span>472</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ Debian 10/11更换国内源，解决系统无法更新问题 - 系统配置 - �
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/132a88e4e5cfe7e3847ed93deae688d2.jpg"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/20230704071747.png"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/131625-106_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/545e6f6f8db4a66e412bf2c5213d3d10-8980982.jpeg"></li>
           <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/2642d17296be87c670c540b75c0562b3-2948127.jpeg"></li>
-          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/20230704071912.png"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/5g7ey7.jpg"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/4185e9897c68528ee5460c9dfcdf23d9-137694.jpeg"></li>
+          <li class="item" data-background-image="https://raw.githubusercontent.com/msmkls/photo/main/e1fba48b0d2dd4fc3893a9496db93dc7.jpg"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/545e6f6f8db4a66e412bf2c5213d3d10-8980982.jpeg"></li>
+          <li class="item" data-background-image="https://cdn.jsdelivr.net/gh/msmkls/photo@main/132a88e4e5cfe7e3847ed93deae688d2.jpg"></li>
         </ul>
       </div>
     </header>
@@ -156,7 +156,7 @@ Debian 10/11更换国内源，解决系统无法更新问题 - 系统配置 - �
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://msmkls.github.io/posts/6a31c4a2.html">
+  <link itemprop="mainEntityOfPage" href="https://kls.red/posts/6a31c4a2.html">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -171,20 +171,9 @@ Debian 10/11更换国内源，解决系统无法更新问题 - 系统配置 - �
   <div class="body md" itemprop="articleBody">
     
 
-    <p>1、备份现有源</p>
-<pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
-</code></pre>
-<p>2、一般情况下，将 /etc/apt/sources.list 文件中 Debian 默认的源地址 <span class="exturl" data-url="aHR0cDovL2RlYi5kZWJpYW4ub3JnLw==">http://deb.debian.org/</span> 替换为国内源即可。</p>
-<pre><code>#中国科技大学
-sudo sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g'/etc/apt/sources.list
-#网易云163
-sudo sed -i 's/deb.debian.org/mirrors.163.com/g'/etc/apt/sources.list
-#阿里云
-sudo sed -i 's/deb.debian.org/mirrors.aliyun.com/g'/etc/apt/sources.list
-#清华同方
-sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.list
-</code></pre>
-<p>3、 <code>sudo apt-get update </code> 更新索引以生效。</p>
+    <h5 id="1-备份现有源"><a class="markdownIt-Anchor" href="#1-备份现有源">#</a> 1、备份现有源</h5>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">sudo</span> <span class="token function">cp</span> /etc/apt/sources.list /etc/apt/sources.list_bak</pre></td></tr></table></figure><h5 id="2-一般情况下将-etcaptsourceslist-文件中-debian-默认的源地址-httpdebdebianorg-替换为国内源即可"><a class="markdownIt-Anchor" href="#2-一般情况下将-etcaptsourceslist-文件中-debian-默认的源地址-httpdebdebianorg-替换为国内源即可">#</a> 2、一般情况下，将 /etc/apt/sources.list 文件中 Debian 默认的源地址 <span class="exturl" data-url="aHR0cDovL2RlYi5kZWJpYW4ub3JnLw==">http://deb.debian.org/</span> 替换为国内源即可。</h5>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#中国科技大学</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">sudo</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/deb.debian.org/mirrors.ustc.edu.cn/g'</span>/etc/apt/sources.list</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">#网易云 163</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token function">sudo</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/deb.debian.org/mirrors.163.com/g'</span>/etc/apt/sources.list</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">#阿里云</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token function">sudo</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/deb.debian.org/mirrors.aliyun.com/g'</span>/etc/apt/sources.list</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">#清华同方</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token function">sudo</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'</span>/etc/apt/sources.list</pre></td></tr></table></figure><h5 id="3-sudo-apt-get-update-更新索引以生效"><a class="markdownIt-Anchor" href="#3-sudo-apt-get-update-更新索引以生效">#</a> 3、 <code>sudo apt-get update </code> 更新索引以生效。</h5>
 
       <div class="tags">
           <a href="/tags/Linux/" rel="tag"><i class="ic i-tag"></i> Linux</a>
@@ -200,7 +189,7 @@ sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.li
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-07-04 08:19:26" itemprop="dateModified" datetime="2023-07-04T08:19:26+08:00">2023-07-04</time>
+    <time title="修改时间：2023-07-04 14:51:39" itemprop="dateModified" datetime="2023-07-04T14:51:39+08:00">2023-07-04</time>
   </span>
   <span id="posts/6a31c4a2.html" class="item leancloud_visitors" data-flag-title="Debian 10/11更换国内源，解决系统无法更新问题" title="阅读次数">
       <span class="icon">
@@ -244,7 +233,7 @@ sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.li
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://msmkls.github.io/posts/6a31c4a2.html" title="Debian 10&#x2F;11更换国内源，解决系统无法更新问题">https://msmkls.github.io/posts/6a31c4a2.html</a>
+    <a href="https://kls.red/posts/6a31c4a2.html" title="Debian 10&#x2F;11更换国内源，解决系统无法更新问题">https://kls.red/posts/6a31c4a2.html</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -263,7 +252,7 @@ sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.li
     <div class="item left">
       
 
-  <a href="/posts/a42a1d2d.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;msmkls&#x2F;photo@main&#x2F;20230704072000.png" title="Screen 安装与实际使用命令">
+  <a href="/posts/a42a1d2d.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;msmkls&#x2F;photo@main&#x2F;69873977_p0_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg" title="Screen 安装与实际使用命令">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 系统配置</span>
   <h3>Screen 安装与实际使用命令</h3>
@@ -287,6 +276,7 @@ sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.li
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%A4%87%E4%BB%BD%E7%8E%B0%E6%9C%89%E6%BA%90"><span class="toc-number">1.</span> <span class="toc-text"> 1、备份现有源</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E4%B8%80%E8%88%AC%E6%83%85%E5%86%B5%E4%B8%8B%E5%B0%86-etcaptsourceslist-%E6%96%87%E4%BB%B6%E4%B8%AD-debian-%E9%BB%98%E8%AE%A4%E7%9A%84%E6%BA%90%E5%9C%B0%E5%9D%80-httpdebdebianorg-%E6%9B%BF%E6%8D%A2%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90%E5%8D%B3%E5%8F%AF"><span class="toc-number">2.</span> <span class="toc-text"> 2、一般情况下，将 &#x2F;etc&#x2F;apt&#x2F;sources.list 文件中 Debian 默认的源地址 http:&#x2F;&#x2F;deb.debian.org&#x2F; 替换为国内源即可。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-sudo-apt-get-update-%E6%9B%B4%E6%96%B0%E7%B4%A2%E5%BC%95%E4%BB%A5%E7%94%9F%E6%95%88"><span class="toc-number">3.</span> <span class="toc-text"> 3、 sudo apt-get update  更新索引以生效。</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -327,7 +317,7 @@ sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.li
       <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9ndWktbGVpLXNoaS02" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;gui-lei-shi-6"><i class="ic i-zhihu"></i></span>
       <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTkwMjEyNjA4" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;90212608"><i class="ic i-cloud-music"></i></span>
       <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vd2VpYm9rbHM=" title="https:&#x2F;&#x2F;weibo.com&#x2F;weibokls"><i class="ic i-weibo"></i></span>
-      <a href="https://msmkls.github.io/about" title="https:&#x2F;&#x2F;msmkls.github.io&#x2F;about" class="item about"><i class="ic i-address-card"></i></a>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9tc21rbHMuZ2l0aHViLmlvL2Fib3V0" title="https:&#x2F;&#x2F;msmkls.github.io&#x2F;about"><i class="ic i-address-card"></i></span>
 </div>
 
 <ul class="menu">
@@ -428,19 +418,17 @@ sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.li
 <a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" title="分类于 系统配置">系统配置</a>
 </div>
 
-    <span><a href="/posts/6a31c4a2.html" title="Debian 10&#x2F;11更换国内源，解决系统无法更新问题">Debian 10/11更换国内源，解决系统无法更新问题</a></span>
+    <span><a href="/posts/a42a1d2d.html" title="Screen 安装与实际使用命令">Screen 安装与实际使用命令</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" title="分类于 知识点">知识点</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" title="分类于 系统配置">系统配置</a>
+<a href="/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" title="分类于 食用系列">食用系列</a>
 </div>
 
-    <span><a href="/posts/a42a1d2d.html" title="Screen 安装与实际使用命令">Screen 安装与实际使用命令</a></span>
+    <span><a href="/posts/8976dd96.html" title="Openwrt挂载网盘到本地教程">Openwrt挂载网盘到本地教程</a></span>
   </li>
 
       
@@ -457,10 +445,12 @@ sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.li
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" title="分类于 食用系列">食用系列</a>
+<a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" title="分类于 知识点">知识点</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" title="分类于 系统配置">系统配置</a>
 </div>
 
-    <span><a href="/posts/8976dd96.html" title="Openwrt挂载网盘到本地教程">Openwrt挂载网盘到本地教程</a></span>
+    <span><a href="/posts/6a31c4a2.html" title="Debian 10&#x2F;11更换国内源，解决系统无法更新问题">Debian 10/11更换国内源，解决系统无法更新问题</a></span>
   </li>
 
       

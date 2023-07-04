@@ -3,8 +3,8 @@
     <channel>
         <title>旺笔迹</title>
         <subtitle>傀儡师の后院</subtitle>
-        <icon>https://msmkls.github.io/images/favicon.ico</icon>
-        <link>https://msmkls.github.io</link>
+        <icon>https://kls.red/images/favicon.ico</icon>
+        <link>https://kls.red</link>
         <author>
           <name>KLS</name>
         </author>
@@ -22,39 +22,28 @@
         <category term="软件食用" />
         <category term="飞机场推荐" />
         <item>
-            <guid isPermalink="true">https://msmkls.github.io/posts/6a31c4a2.html</guid>
+            <guid isPermalink="true">https://kls.red/posts/6a31c4a2.html</guid>
             <title>Debian 10/11更换国内源，解决系统无法更新问题</title>
-            <link>https://msmkls.github.io/posts/6a31c4a2.html</link>
-            <category term="知识点" scheme="https://msmkls.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" />
-            <category term="系统配置" scheme="https://msmkls.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" />
-            <category term="Linux" scheme="https://msmkls.github.io/tags/Linux/" />
-            <category term="Debian更换国内源" scheme="https://msmkls.github.io/tags/Debian%E6%9B%B4%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/" />
+            <link>https://kls.red/posts/6a31c4a2.html</link>
+            <category term="知识点" scheme="https://kls.red/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" />
+            <category term="系统配置" scheme="https://kls.red/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" />
+            <category term="Linux" scheme="https://kls.red/tags/Linux/" />
+            <category term="Debian更换国内源" scheme="https://kls.red/tags/Debian%E6%9B%B4%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/" />
             <pubDate>Tue, 04 Jul 2023 08:17:06 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;1、备份现有源&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2、一般情况下，将 /etc/apt/sources.list 文件中 Debian 默认的源地址 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RlYi5kZWJpYW4ub3JnLw==&#34;&gt;http://deb.debian.org/&lt;/span&gt; 替换为国内源即可。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#中国科技大学
-sudo sed -i &#39;s/deb.debian.org/mirrors.ustc.edu.cn/g&#39;/etc/apt/sources.list
-#网易云163
-sudo sed -i &#39;s/deb.debian.org/mirrors.163.com/g&#39;/etc/apt/sources.list
-#阿里云
-sudo sed -i &#39;s/deb.debian.org/mirrors.aliyun.com/g&#39;/etc/apt/sources.list
-#清华同方
-sudo sed -i &#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;/etc/apt/sources.list
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;3、 &lt;code&gt;sudo apt-get update &lt;/code&gt; 更新索引以生效。&lt;/p&gt;
+            <description><![CDATA[ &lt;h5 id=&#34;1-备份现有源&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-备份现有源&#34;&gt;#&lt;/a&gt; 1、备份现有源&lt;/h5&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; /etc/apt/sources.list /etc/apt/sources.list_bak&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h5 id=&#34;2-一般情况下将-etcaptsourceslist-文件中-debian-默认的源地址-httpdebdebianorg-替换为国内源即可&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-一般情况下将-etcaptsourceslist-文件中-debian-默认的源地址-httpdebdebianorg-替换为国内源即可&#34;&gt;#&lt;/a&gt; 2、一般情况下，将 /etc/apt/sources.list 文件中 Debian 默认的源地址 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RlYi5kZWJpYW4ub3JnLw==&#34;&gt;http://deb.debian.org/&lt;/span&gt; 替换为国内源即可。&lt;/h5&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#中国科技大学&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.ustc.edu.cn/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#网易云 163&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.163.com/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#阿里云&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.aliyun.com/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#清华同方&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h5 id=&#34;3-sudo-apt-get-update-更新索引以生效&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-sudo-apt-get-update-更新索引以生效&#34;&gt;#&lt;/a&gt; 3、 &lt;code&gt;sudo apt-get update &lt;/code&gt; 更新索引以生效。&lt;/h5&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://msmkls.github.io/posts/a42a1d2d.html</guid>
+            <guid isPermalink="true">https://kls.red/posts/a42a1d2d.html</guid>
             <title>Screen 安装与实际使用命令</title>
-            <link>https://msmkls.github.io/posts/a42a1d2d.html</link>
-            <category term="知识点" scheme="https://msmkls.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" />
-            <category term="系统配置" scheme="https://msmkls.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" />
-            <category term="Linux" scheme="https://msmkls.github.io/tags/Linux/" />
-            <category term="远程ssh" scheme="https://msmkls.github.io/tags/%E8%BF%9C%E7%A8%8Bssh/" />
-            <category term="后台运行" scheme="https://msmkls.github.io/tags/%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C/" />
+            <link>https://kls.red/posts/a42a1d2d.html</link>
+            <category term="知识点" scheme="https://kls.red/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/" />
+            <category term="系统配置" scheme="https://kls.red/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" />
+            <category term="Linux" scheme="https://kls.red/tags/Linux/" />
+            <category term="远程ssh" scheme="https://kls.red/tags/%E8%BF%9C%E7%A8%8Bssh/" />
+            <category term="后台运行" scheme="https://kls.red/tags/%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C/" />
             <pubDate>Tue, 04 Jul 2023 08:10:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Screen 是一个在 Linux 系统下非常有用的终端工具，它可以在单个终端会话中创建多个虚拟终端，并且可以在后台运行终端会话。这篇文章将向您介绍如何在 Linux 系统中使用 Screen 工具，并提供一些实用的示例。&lt;/p&gt;
 &lt;h2 id=&#34;安装-screen&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装-screen&#34;&gt;#&lt;/a&gt; &lt;strong&gt;安装 Screen&lt;/strong&gt;&lt;/h2&gt;
@@ -62,20 +51,14 @@ sudo sed -i &#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;/etc/apt/so
 &lt;ul&gt;
 &lt;li&gt;centos&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-undefined&#34;&gt;yun install screen
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;yun &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;screen&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
 &lt;li&gt;ubuntu/debian&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&#34;highlight csharp&#34;&gt;&lt;figcaption data-lang=&#34;C#&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;sudo apt&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;get&lt;/span&gt; install screen&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;基本使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本使用&#34;&gt;#&lt;/a&gt; &lt;strong&gt;基本使用&lt;/strong&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;apt-get&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;screen&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;基本使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本使用&#34;&gt;#&lt;/a&gt; &lt;strong&gt;基本使用&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;使用 Screen 最基本的命令是  &lt;code&gt;screen&lt;/code&gt; ，它可以创建一个新的终端会话。当您运行这个命令时，Screen 会在当前终端中创建一个新的虚拟终端，并进入到这个终端中。您可以在这个终端中运行任何命令，就像在普通的终端中一样。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-undefined&#34;&gt;screen
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;要退出当前的 Screen 会话，可以使用  &lt;code&gt;exit&lt;/code&gt;  命令或者按下  &lt;code&gt;Ctrl&lt;/code&gt;  +  &lt;code&gt;a&lt;/code&gt; ，然后再按下  &lt;code&gt;d&lt;/code&gt;  键。这样会将当前的 Screen 会话移动到后台，并返回到原来的终端中。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;screen&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;要退出当前的 Screen 会话，可以使用  &lt;code&gt;exit&lt;/code&gt;  命令或者按下  &lt;code&gt;Ctrl&lt;/code&gt;  +  &lt;code&gt;a&lt;/code&gt; ，然后再按下  &lt;code&gt;d&lt;/code&gt;  键。这样会将当前的 Screen 会话移动到后台，并返回到原来的终端中。&lt;/p&gt;
 &lt;p&gt;如果您想重新进入一个已经存在的 Screen 会话，可以使用  &lt;code&gt;screen -r&lt;/code&gt;  命令，并指定会话的 ID 或名称。例如，要重新进入 ID 为 12345 的 Screen 会话，可以使用以下命令：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-undefined&#34;&gt;screen -r 12345
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;创建窗口和面板&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建窗口和面板&#34;&gt;#&lt;/a&gt; &lt;strong&gt;创建窗口和面板&lt;/strong&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;screen&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;12345&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;创建窗口和面板&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建窗口和面板&#34;&gt;#&lt;/a&gt; &lt;strong&gt;创建窗口和面板&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;在 Screen 会话中，您可以创建多个窗口和面板，以便在同一个终端会话中同时运行多个程序。&lt;/p&gt;
 &lt;p&gt;要创建一个新窗口，请使用  &lt;code&gt;Ctrl&lt;/code&gt;  +  &lt;code&gt;a&lt;/code&gt; ，然后再按下  &lt;code&gt;c&lt;/code&gt;  键。这样会在当前的 Screen 会话中创建一个新窗口，并将光标移动到这个窗口中。您可以在这个窗口中运行任何命令，就像在一个新的终端中一样。&lt;/p&gt;
 &lt;p&gt;要在当前的窗口中创建一个新的面板，请使用  &lt;code&gt;Ctrl&lt;/code&gt;  +  &lt;code&gt;a&lt;/code&gt; ，然后再按下  &lt;code&gt;|&lt;/code&gt;  或  &lt;code&gt;%&lt;/code&gt;  键。这样会将当前的窗口分成两个部分，并在其中一个部分中创建一个新面板。您可以在这个新面板中运行任何命令，就像在一个新的终端中一样。&lt;/p&gt;
@@ -109,14 +92,14 @@ sudo sed -i &#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;/etc/apt/so
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://msmkls.github.io/posts/8976dd96.html</guid>
+            <guid isPermalink="true">https://kls.red/posts/8976dd96.html</guid>
             <title>Openwrt挂载网盘到本地教程</title>
-            <link>https://msmkls.github.io/posts/8976dd96.html</link>
-            <category term="食用系列" scheme="https://msmkls.github.io/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" />
-            <category term="openwrt" scheme="https://msmkls.github.io/tags/openwrt/" />
-            <category term="clouddrive" scheme="https://msmkls.github.io/tags/clouddrive/" />
+            <link>https://kls.red/posts/8976dd96.html</link>
+            <category term="食用系列" scheme="https://kls.red/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" />
+            <category term="openwrt" scheme="https://kls.red/tags/openwrt/" />
+            <category term="clouddrive" scheme="https://kls.red/tags/clouddrive/" />
             <pubDate>Tue, 04 Jul 2023 08:04:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目地址&#34;&gt;#&lt;/a&gt; 项目地址&lt;/h2&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目地址&#34;&gt;#&lt;/a&gt; 项目地址&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;docker 挂载云盘 [Clouddrive]&lt;/strong&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmU=&#34;&gt;https://hub.docker.com/r/cloudnas/clouddrive&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Windows 版本&lt;/strong&gt;&lt;br&gt;
@@ -125,10 +108,10 @@ sudo sed -i &#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;/etc/apt/so
 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubGFuem91Yi5jb20vYjA5MDE3ZW9iP3B3ZD0yaXUx&#34;&gt; https://www.lanzoub.com/b09017eob&lt;/span&gt; 密码：2iu1&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;演示过程视频&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#演示过程视频&#34;&gt;#&lt;/a&gt; 演示过程视频&lt;/h2&gt;
+&lt;h4 id=&#34;演示过程视频&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#演示过程视频&#34;&gt;#&lt;/a&gt; 演示过程视频&lt;/h4&gt;
 &lt;iframe width=&#34;100%&#34; height=&#34;480&#34; frameborder=&#34;0&#34; src=&#34;https://www.ixigua.com/iframe/7008135204053189157?autoplay=0&#34; referrerpolicy=&#34;unsafe-url&#34; allowfullscreen=&#34;&#34; __idm_id__=&#34;745473&#34; style=&#34;box-sizing: border-box; -webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: initial !important; color: rgb(170, 170, 170); font-family: &amp;quot;Source Sans Pro&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft Yahei&amp;quot;, SimSun, Helvetica, Arial, sans-serif, monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; white-space: normal; background-color: rgb(33, 33, 33); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&#34;&gt;&lt;/iframe&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;以下是结合开发者群和群友以及个人的搭建过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以下是结合开发者群和群友以及个人的搭建过程&#34;&gt;#&lt;/a&gt; 以下是结合开发者群和群友以及个人的搭建过程&lt;/h3&gt;
+&lt;h4 id=&#34;以下是结合开发者群和群友以及个人的搭建过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以下是结合开发者群和群友以及个人的搭建过程&#34;&gt;#&lt;/a&gt; 以下是结合开发者群和群友以及个人的搭建过程&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Cloud Drive 说明：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;理解一：&lt;/strong&gt;&lt;br&gt;
@@ -146,11 +129,10 @@ sudo sed -i &#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;/etc/apt/so
 &lt;li&gt;支持对云盘文件夹重命名&lt;/li&gt;
 &lt;li&gt;jellyfin 客户端，电脑、手机上的浏览器，或者 jellyfin app，或者 kodi 都行&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;配置过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置过程&#34;&gt;#&lt;/a&gt; 配置过程&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ps:&lt;/strong&gt; 避坑 docker 安装空间不足，openwrt 一般只要不是自己 DIY 编译的很少有把 docker 分区编译够用的，只能通过挂载分区的方式来实现扩容。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;避坑 docker 安装空间不足，解决方法&lt;/p&gt;
+&lt;h4 id=&#34;配置过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置过程&#34;&gt;#&lt;/a&gt; 配置过程&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;ps:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	避坑 docker 安装空间不足，openwrt 一般只要不是自己 DIY 编译的很少有把 docker 分区编译够用的，只能通过挂载分区的方式来实现扩容。&lt;/p&gt;
+&lt;h4 id=&#34;避坑docker安装空间不足解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#避坑docker安装空间不足解决方法&#34;&gt;#&lt;/a&gt; 避坑 docker 安装空间不足，解决方法&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;1. 创建分区或者添加新分区&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;一般添加的新的磁盘默认是看不到的，需要执行一下命令创建分区或者格式化成 ext4 才能在挂载点看到该分区。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;a. 查看当前系统所有硬盘及分区情况：fdisk -l&lt;/strong&gt;&lt;/p&gt;
@@ -171,74 +153,34 @@ sudo sed -i &#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;/etc/apt/so
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.kls.red/usr/uploads/2021/08/351942143.png&#34;&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/msmkls/photo@main/351942143.png&#34; alt=&#34;ksvyb81d.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmtscy5yZWQvdXNyL3VwbG9hZHMvMjAyMS8wOC8zNTE5NDIxNDMucG5n&#34;&gt;ksvyb81d.png&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;在高级选项里选择 ext4，点击 保存 &amp;amp; 应用&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;然后重启 openwrt，一定要重启，不然不生效&lt;br&gt;
-生效后如下&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;在高级选项里选择 ext4，点击 保存 &amp;amp; 应用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然后重启 openwrt，一定要重启，不然不生效&lt;br&gt;
+生效后如下&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.kls.red/usr/uploads/2021/08/2945243035.png&#34;&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/msmkls/photo@main/2945243035.png&#34; alt=&#34;ksvyf83u.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmtscy5yZWQvdXNyL3VwbG9hZHMvMjAyMS8wOC8yOTQ1MjQzMDM1LnBuZw==&#34;&gt;ksvyf83u.png&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把分区挂载到 opt 目录后，也就是 docker 的目录达到了扩容的目的&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;把分区挂载到 opt 目录后，也就是 docker 的目录达到了扩容的目的&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;处理完扩容问题后，接下来进入安装阶段&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通过 ssh 连接 openwrt 后&lt;/li&gt;
-&lt;li&gt;开启 MountFlags&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mkdir -p /etc/systemd/system/docker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;service&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;d/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cat &amp;lt;&amp;lt;EOF &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; /etc/systemd/system/docker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;service&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;d/clear_mount_propagation_flags&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;conf&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;[Service]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;MountFlags=shared&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;EOF&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mount --make&lt;span class=&#34;token token-operator punctuation&#34;&gt;-&lt;/span&gt;shared /opt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;然后&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;#CD1:
-docker run -d \
-      --name clouddrive \
-      --restart unless-stopped \
-      -v /opt/CloudNAS:/CloudNAS:shared \
-      -v /opt/Config:/Config \
-      --network host \
-      --pid host \
-     --privileged \
-     --device /dev/fuse:/dev/fuse \
-     cloudnas/clouddrive
-     
-#CD2     
-docker run -d \
-      --name clouddrive \
-      --restart unless-stopped \
-      --env CLOUDDRIVE_HOME=/Config \
-      -v /opt/CloudNAS:/CloudNAS:shared \
-      -v /opt/Config:/Config \
-      --network host \
-      --pid host \
-     --privileged \
-     --device /dev/fuse:/dev/fuse \
-     cloudnas/clouddrive2-unstable
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;需要映射其他路径请参考官方 docker 说明&lt;/p&gt;
+&lt;p&gt;通过 ssh 连接 openwrt 后&lt;/p&gt;
+&lt;p&gt;开启 MountFlags&lt;/p&gt;
+&lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mkdir -p /etc/systemd/system/docker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;service&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;d/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cat &amp;lt;&amp;lt;EOF &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; /etc/systemd/system/docker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;service&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;d/clear_mount_propagation_flags&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;conf&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;[Service]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;MountFlags=shared&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;EOF&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mount --make&lt;span class=&#34;token token-operator punctuation&#34;&gt;-&lt;/span&gt;shared /opt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;然后&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#CD1:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; run &lt;span class=&#34;token parameter variable&#34;&gt;-d&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--name&lt;/span&gt; clouddrive &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--restart&lt;/span&gt; unless-stopped &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; /opt/CloudNAS:/CloudNAS:shared &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; /opt/Config:/Config &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--network&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;host&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--pid&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;host&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token parameter variable&#34;&gt;--privileged&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token parameter variable&#34;&gt;--device&lt;/span&gt; /dev/fuse:/dev/fuse &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     cloudnas/clouddrive&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#CD2     &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; run &lt;span class=&#34;token parameter variable&#34;&gt;-d&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--name&lt;/span&gt; clouddrive &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--restart&lt;/span&gt; unless-stopped &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--env&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;CLOUDDRIVE_HOME&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;/Config &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; /opt/CloudNAS:/CloudNAS:shared &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; /opt/Config:/Config &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--network&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;host&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token parameter variable&#34;&gt;--pid&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;host&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token parameter variable&#34;&gt;--privileged&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token parameter variable&#34;&gt;--device&lt;/span&gt; /dev/fuse:/dev/fuse &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     cloudnas/clouddrive2-unstable&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;需要映射其他路径请参考官方 docker 说明&lt;/p&gt;
 &lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;自此安装结束&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;自此安装结束&lt;/strong&gt;&lt;br&gt;
 额，(⊙o⊙)… 这张图是挂载到局域网。。。。&lt;br&gt;
-&lt;a href=&#34;https://blog.kls.red/usr/uploads/2021/08/3030487540.png&#34;&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/msmkls/photo@main/3030487540.png&#34; alt=&#34;ksx34aij.png&#34;&gt;ksx34aij.png&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;然后输入 openwrt 地址加端口号注册或者登录即可&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;a href=&#34;https://blog.kls.red/usr/uploads/2021/08/3030487540.png&#34;&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/msmkls/photo@main/3030487540.png&#34; alt=&#34;ksx34aij.png&#34;&gt;ksx34aij.png&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然后输入 openwrt 地址加端口号注册或者登录即可&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.kls.red/usr/uploads/2021/08/2257722242.png&#34;&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/msmkls/photo@main/2257722242.png&#34; alt=&#34;ksvzj7di.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmtscy5yZWQvdXNyL3VwbG9hZHMvMjAyMS8wOC8yMjU3NzIyMjQyLnBuZw==&#34;&gt;ksvzj7di.png&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;阿里云和 115 网盘可通过扫码登录&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;阿里云和 115 网盘可通过扫码登录&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;登录好网盘账号以后，电脑可以通过网络共享访问，例如：\192.168.1.1 把网盘映射到本地即可&lt;br&gt;
 &lt;a href=&#34;https://blog.kls.red/usr/uploads/2021/08/3014131787.png&#34;&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/msmkls/photo@main/3014131787.png&#34; alt=&#34;kszzv3g1.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmtscy5yZWQvdXNyL3VwbG9hZHMvMjAyMS8wOC8zMDE0MTMxNzg3LnBuZw==&#34;&gt;kszzv3g1.png&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;重启路由 docker 启动失败解决&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;重启路由 docker 启动失败解决&lt;/strong&gt;&lt;br&gt;
 找到系统 — 启动项 — 本地启动脚本（拉到最底部）&lt;br&gt;
 &lt;a href=&#34;https://blog.kls.red/usr/uploads/2021/09/188294448.png&#34;&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/msmkls/photo@main/188294448.png&#34; alt=&#34;ku2v2p3a.png&#34;&gt;ku2v2p3a.png&lt;/a&gt;&lt;br&gt;
- 按照上图，把下面参数填到指定位置，保存应用，重启即可！&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mount --make&lt;span class=&#34;token token-operator punctuation&#34;&gt;-&lt;/span&gt;shared /opt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p lamp=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;如果操作中命令错误或者需要删除可以用以下命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如果操作中命令错误或者需要删除可以用以下命令&#34;&gt;#&lt;/a&gt; 如果操作中命令错误或者需要删除可以用以下命令。&lt;/h2&gt;
+ 按照上图，把下面参数填到指定位置，保存应用，重启即可！&lt;/p&gt;
+&lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mount --make&lt;span class=&#34;token token-operator punctuation&#34;&gt;-&lt;/span&gt;shared /opt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;如果操作中命令错误或者需要删除可以用以下命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如果操作中命令错误或者需要删除可以用以下命令&#34;&gt;#&lt;/a&gt; 如果操作中命令错误或者需要删除可以用以下命令。&lt;/h4&gt;
 &lt;p&gt;ps：如果多容器请安需删除，删除其一，请注意不要使用全部删除&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;查看运行中的容器&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker ps&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;进入容器&lt;/strong&gt;&lt;/p&gt;
@@ -254,7 +196,7 @@ docker run -d \
 &lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker ps -aq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;停止所有的容器&lt;/p&gt;
 &lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker &lt;span class=&#34;token keyword&#34;&gt;stop&lt;/span&gt; $&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;docker ps -aq&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;删除所有的容器&lt;/p&gt;
 &lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker rm $&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;docker ps -aq&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;删除所有的镜像&lt;/p&gt;
-&lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker rmi $&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;docker images -q&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker image prune --force --all或者docker image prune -f -a &lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 删除所有不使用的镜像  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker container prune&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 删除所有停止的容器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;115网盘也可以通过cookie登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#115网盘也可以通过cookie登录&#34;&gt;#&lt;/a&gt; 115 网盘也可以通过 cookie 登录&lt;/h2&gt;
+&lt;figure class=&#34;highlight abap&#34;&gt;&lt;figcaption data-lang=&#34;ABAP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker rmi $&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;docker images -q&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker image prune --force --all或者docker image prune -f -a &lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 删除所有不使用的镜像  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker container prune&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 删除所有停止的容器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;115网盘也可以通过cookie登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#115网盘也可以通过cookie登录&#34;&gt;#&lt;/a&gt; 115 网盘也可以通过 cookie 登录&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;1. 安装扩展&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jaHJvbWUuZ29vZ2xlLmNvbS93ZWJzdG9yZS9kZXRhaWwvZWRpdHRoaXNjb29raWUvZm5nbWhubnBpbGhwbGFlZWRpZmhjY2Nlb21jbGdmYmc=&#34;&gt;editthiscookie&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chrome 浏览器也可通过手机 115 扫码登录 115 账号&lt;/strong&gt;&lt;/p&gt;
@@ -332,22 +274,22 @@ docker run -d \
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://msmkls.github.io/posts/6346bbd.html</guid>
+            <guid isPermalink="true">https://kls.red/posts/6346bbd.html</guid>
             <title>clouddrive在linux（云主机/vps）下挂载过程</title>
-            <link>https://msmkls.github.io/posts/6346bbd.html</link>
-            <category term="食用系列" scheme="https://msmkls.github.io/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" />
-            <category term="clouddrive" scheme="https://msmkls.github.io/tags/clouddrive/" />
-            <category term="Linux" scheme="https://msmkls.github.io/tags/Linux/" />
+            <link>https://kls.red/posts/6346bbd.html</link>
+            <category term="食用系列" scheme="https://kls.red/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" />
+            <category term="Linux" scheme="https://kls.red/tags/Linux/" />
+            <category term="clouddrive" scheme="https://kls.red/tags/clouddrive/" />
             <pubDate>Mon, 03 Jul 2023 17:12:24 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;基本环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本环境&#34;&gt;#&lt;/a&gt; &lt;strong&gt;基本环境&lt;/strong&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;ps&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ps&#34;&gt;#&lt;/a&gt; &lt;strong&gt;ps：&lt;/strong&gt;&lt;/h3&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;基本环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本环境&#34;&gt;#&lt;/a&gt; 基本环境&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;ps：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;VPS（这里指的是网站服务器）或者本地计算机、虚拟机下的 linux 系统：Ubuntu、centos、Debian… 等 借助工具：docker （这里以宝塔面板为基础的图形界面，虽然熟悉后不怎么用，但方便初接触者）&lt;/li&gt;
 &lt;li&gt;挂载到网站服务器上，clouddrive 不像其他挂载工具那样，只是分享下载，clouddrive 更纯粹，你可以把它理解成真实的硬盘，如果你 PHP 基础比较好，可以结合给视频站或下载站等使用，这里不多做赘述。&lt;/li&gt;
 &lt;li&gt;这里有个问题挂载服务器应当遵守网盘使用条款使用，如果把阿里云盘挂载到其他国家的云服务器上，可能会触发账号的使用机制，阿里云盘条款不允许国外使用，如果在国外云主机使用可能会刷不出来二维码或登录不上，像 115 网盘可能会触发异地登录等风险，只要在国内包括香港，都没什么大问题）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以下演示仅供初步接触者参考使用，大佬请略过即可，较真抬杠的请进群找大佬们，谢谢支持！&lt;/p&gt;
-&lt;h3 id=&#34;docker项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker项目地址&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Docker 项目地址&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;docker项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker项目地址&#34;&gt;#&lt;/a&gt; Docker 项目地址&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmU=&#34;&gt;cloudnas/clouddrive&lt;/span&gt;&lt;/p&gt;
@@ -356,7 +298,7 @@ docker run -d \
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS9yL2Nsb3VkbmFzL2Nsb3VkZHJpdmUyLXVuc3RhYmxl&#34;&gt;clouddrive2-unstable&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;docker部署命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker部署命令&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Docker 部署命令&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;docker部署命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker部署命令&#34;&gt;#&lt;/a&gt; Docker 部署命令&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;根据 clouddrive 的命令，在 ssh 输入命令&lt;/li&gt;
 &lt;/ol&gt;
@@ -389,7 +331,7 @@ docker run -d \
 &lt;p&gt;CD2 入口 IP:19798&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;常见问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见问题&#34;&gt;#&lt;/a&gt; &lt;strong&gt;常见问题&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;常见问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见问题&#34;&gt;#&lt;/a&gt; 常见问题&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;安装部署后报错&lt;/strong&gt;  &lt;code&gt;Error response from daemon: Get https://registry-1.docker.io/v2/: Docker&lt;/code&gt;  之类的：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;重新执行该命令重试，有时候是受代理环境或者网络原因造成的&lt;/li&gt;
@@ -415,12 +357,12 @@ docker run -d \
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://msmkls.github.io/posts/9a43ef1.html</guid>
+            <guid isPermalink="true">https://kls.red/posts/9a43ef1.html</guid>
             <title>X86 openwrt 如何将 CPU 模式设置为性能</title>
-            <link>https://msmkls.github.io/posts/9a43ef1.html</link>
-            <category term="食用系列" scheme="https://msmkls.github.io/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" />
-            <category term="openwrt" scheme="https://msmkls.github.io/tags/openwrt/" />
-            <category term="cpu高频空载模式" scheme="https://msmkls.github.io/tags/cpu%E9%AB%98%E9%A2%91%E7%A9%BA%E8%BD%BD%E6%A8%A1%E5%BC%8F/" />
+            <link>https://kls.red/posts/9a43ef1.html</link>
+            <category term="食用系列" scheme="https://kls.red/categories/%E9%A3%9F%E7%94%A8%E7%B3%BB%E5%88%97/" />
+            <category term="openwrt" scheme="https://kls.red/tags/openwrt/" />
+            <category term="cpu高频空载模式" scheme="https://kls.red/tags/cpu%E9%AB%98%E9%A2%91%E7%A9%BA%E8%BD%BD%E6%A8%A1%E5%BC%8F/" />
             <pubDate>Sat, 01 Jul 2023 21:13:18 +0800</pubDate>
             <description><![CDATA[ &lt;h4 id=&#34;简述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简述&#34;&gt;#&lt;/a&gt; &lt;strong&gt;简述&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;很多人在编译后或者好不容易拿到符合自己需求的系统包后，体验一直上不去，甚至有些使用 j1900CPU 感觉还不如硬件路由&lt;/p&gt;
