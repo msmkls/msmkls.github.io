@@ -7,6 +7,19 @@
     "home_page_url": "https://msmkls.github.io",
     "items": [
         {
+            "id": "https://msmkls.github.io/posts/6a31c4a2.html",
+            "url": "https://msmkls.github.io/posts/6a31c4a2.html",
+            "title": "Debian 10/11更换国内源，解决系统无法更新问题",
+            "date_published": "2023-07-04T00:17:06.000Z",
+            "content_html": "<p>1、备份现有源</p>\n<pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak\n</code></pre>\n<p>2、一般情况下，将 /etc/apt/sources.list 文件中 Debian 默认的源地址 <span class=\"exturl\" data-url=\"aHR0cDovL2RlYi5kZWJpYW4ub3JnLw==\">http://deb.debian.org/</span> 替换为国内源即可。</p>\n<pre><code>#中国科技大学\nsudo sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g'/etc/apt/sources.list\n#网易云163\nsudo sed -i 's/deb.debian.org/mirrors.163.com/g'/etc/apt/sources.list\n#阿里云\nsudo sed -i 's/deb.debian.org/mirrors.aliyun.com/g'/etc/apt/sources.list\n#清华同方\nsudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g'/etc/apt/sources.list\n</code></pre>\n<p>3、 <code>sudo apt-get update </code> 更新索引以生效。</p>\n",
+            "tags": [
+                "知识点",
+                "系统配置",
+                "Linux",
+                "Debian更换国内源"
+            ]
+        },
+        {
             "id": "https://msmkls.github.io/posts/a42a1d2d.html",
             "url": "https://msmkls.github.io/posts/a42a1d2d.html",
             "title": "Screen 安装与实际使用命令",
