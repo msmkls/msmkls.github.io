@@ -8,7 +8,7 @@
     <author>
       <name>KLS</name>
     </author>
-    <updated>2023-07-04T09:49:28.000Z</updated>
+    <updated>2023-07-05T17:53:52.000Z</updated>
     <category term="NAS" />
     <category term="群晖" />
     <category term="openwrt" />
@@ -18,6 +18,167 @@
     <category term="青龙面板" />
     <category term="软件食用" />
     <category term="飞机场推荐" />
+    <entry>
+        <id>https://kls.red/posts/ec9c91ab.html</id>
+        <title>防失联飞机场整理</title>
+        <link rel="alternate" href="https://kls.red/posts/ec9c91ab.html"/>
+        <content type="html">&lt;h3 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h3&gt;
+&lt;p&gt;为防止失联，应急限免科学机场，免费机场公益机场免费 vpn 免费代理 SSR-V2ray-trojan&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;掌握最新机场优惠折扣通知，最新机场推荐评测图，最新科学上网相关新闻与消息，欢迎关注 ：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90Lm1lL2ppY2hhbmd0ag==&#34;&gt;telegram 科学上网与机场观察频道&lt;/span&gt;&lt;br /&gt;
+便宜机场推荐，对自己好一点～：&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2h3YW56L1NTLVNTUi1WMnJheS9ibG9iL21hc3Rlci9SRUFETUUubWQ=&#34;&gt;便宜付费机场推荐&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[原项目地址: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2h3YW56L1NTUi1WMnJheS1Ucm9qYW4tdnBuL3RyZWUvbWFpbg==&#34;&gt;hwanz/SSR-V2ray-Trojan-vpn: 免费机场公益机场收集 / 免费 vpn - 定时更新 (github.com)&lt;/span&gt;](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2h3YW56L1NTUi1WMnJheS1Ucm9qYW4tdnBuL3RyZWUvbWFpbg==&#34;&gt;https://github.com/hwanz/SSR-V2ray-Trojan-vpn/tree/main&lt;/span&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;免费软件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#免费软件&#34;&gt;#&lt;/a&gt; 免费软件&lt;/h3&gt;
+&lt;p&gt;1）迷雾通：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93YWEuYWkveGlhemFpbWl3dXRvbmc=&#34;&gt;迷雾通免翻墙链接&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nZXBoLmlvL3pocy8=&#34;&gt;官网，需要代理才能打开&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;2）landeng：&lt;/p&gt;
+&lt;p&gt;很多人听过用过&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2dldGxhbnRlcm4v&#34;&gt;官网&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;免费限制 500M，下面有些链接被墙了，可以先用蓝灯打开&lt;/p&gt;
+&lt;p&gt;3）赛风： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wc2lwaG9uMy5jb20vemgvaW5kZXguaHRtbA==&#34;&gt;官网&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;4）Warp ：&lt;br /&gt;
+cloudflare 旗下 vpn&lt;br /&gt;
+ 全平台下载:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbG91ZGZsYXJld2FycC5jb20v&#34;&gt;https://cloudflarewarp.com/&lt;/span&gt;&lt;br /&gt;
+ 到 TG 机器人 bot：&lt;br /&gt;
+@generatewarpplusbot  到按提示申请流量的 key，然后添加到下载的软件账户上，大概有 23pb，1pb 等于 100 万 G。不同运营商使用体验不一样。具体自测。&lt;/p&gt;
+&lt;h3 id=&#34;免费机场白嫖机场&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#免费机场白嫖机场&#34;&gt;#&lt;/a&gt; 免费机场 / 白嫖机场 ：&lt;/h3&gt;
+&lt;p&gt;有些免费是暂时的，当前可能没有免费活动了。试用的好用可以付费。也可以购买我推荐的长期观察的付费机场。也别用 QQ 邮箱注册！下面的机场是我长久观察的，可放心付费，付费机场体验好很多。下面是免费机场，不一定还有免费试用活动，可以一个个试试看：&lt;/p&gt;
+&lt;p&gt;2023.07 更新&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95b3V0dS5zaG9wLyMvcmVnaXN0ZXI/Y29kZT0zQ3hpcXlPYw==&#34;&gt;悠兔官网&lt;/span&gt; : 3 小时 1G，某大佬机场，BGP 隧道中转 SS 机场，适合不想人太多的。近期我的主用机场，稳定性和速度都不错。有免费试用，其实好不好用得你试了才知道。适合不追求节点多的用户。老板人不错。也有按量付费。需要专属线路、大流量套餐可以开工单找机场主定制。八折优惠码：666。&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v5L6/5a6cU1PmnLrlnLrmjqjojZDkuYvmgqDlhZQuaHRtbA==&#34;&gt;悠兔具体介绍&lt;/span&gt; 试用觉得不错可以续费&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iaXQubHkvM1NmcmtkNw==&#34;&gt;云翼网络&lt;/span&gt; IEPl 专线与公网中转 ss 机场。1 块 1 天 5G 试用。可付费。&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v5LiT57q/c3PmnLrlnLrmjqjojZDkuYvkupHnv7znvZHnu5zljoblj7LmtYvpgJ/nu5PmnpwuaHRtbA==&#34;&gt;云翼网络拓扑结构检测和流媒体、历史测速结果&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sYW9tYW95dW4ubWUvIy9yZWdpc3Rlcj9jb2RlPWkwVnY5TjVS&#34;&gt;老猫云&lt;/span&gt;： 一小时 10G ，饿饭云分站，入口：深圳移动，落地：Nerocloud、FDCSERVERS、Hinet、DEDIPATH。可续费&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v6ICB54yr5LqR5Y6G5Y+y5rWL6YCf57uT5p6c5pW05ZCILmh0bWw=&#34;&gt;老猫云拓扑结构检测和流媒体、历史测速结果合集&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hYjEyeS5jb20vIy9yZWdpc3Rlcj9jb2RlPVlvSVZkUUpq&#34;&gt;大哥云&lt;/span&gt; : 1 天 10G，3 年老机场了。广州移动和湖南联通 G 口独享。可以付费。&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v5aSn5ZOl5LqR5Y6G5Y+y5rWL6YCf57uT5p6c5pW05ZCILmh0bWw=&#34;&gt;大哥云拓扑结构检测和流媒体、历史测速结果合集&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95dXlhbi5vbmxpbmUvIy9yZWdpc3Rlcj9jb2RlPVBESDZESk8w&#34;&gt;雨燕云&lt;/span&gt; : 4 天 1G。隧道中转机场。全中转机场，入口：佛山移动，江苏宿迁移动。过境：广港隧道、苏日隧道。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ib2FyZC5qaWtlOTkueHl6LyMlMjUyRnJlZ2lzdGVyJTI1M0Zjb2RlJTI1M0RERVdKcHE3NA==&#34;&gt;极客加速器&lt;/span&gt; :3 天 5G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXNoLmZzY2xvdWQuY2MvIy9yZWdpc3Rlcj9jb2RlPTNNbDZwZzJZ&#34;&gt;FSCloud&lt;/span&gt; : 3 天 10G,Azure 拉全球&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2JpdC5seS80MG93eGxZ&#34;&gt;可莉&lt;/span&gt;：全 Trojan 的线路机场。新注册用户可使用免费的 2GB 流量。运营 5 年有余，节点采用 BGP 入口 / IEPL 专线热备。有少量小众地区节点（阿根廷、卢森堡、巴西。土耳其），香港线路速度佳，流媒体解锁效果好&lt;br /&gt;
+入门套餐:￥16.88/60GB/30 天，￥168.88/720GB/360 天&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95b29vLmxpdmUvYXV0aC9yZWdpc3Rlcj9jb2RlPUFDeWY=&#34;&gt;速云&lt;/span&gt; ： 3 天 10G,Trojan 协议&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nbGFkb3Muc3BhY2UvbGFuZGluZy9KOUMxOS1NUTRZVy1QRTBHOS02MkZQMw==&#34;&gt;GLaDOS&lt;/span&gt; :  免费 4 天，10G, 签到一天续一天。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sa3NpLnh5ei8jL3JlZ2lzdGVyP2NvZGU9WWk1TUg5R2w=&#34;&gt;狗头加速器&lt;/span&gt; :5 天 5G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudGFpc2hhbi5wcm8vIy9yZWdpc3Rlcj9jb2RlPWJjOTZlSFR0&#34;&gt;TaiShan Net&lt;/span&gt; :7 天 10G&lt;/p&gt;
+&lt;p&gt;非常便宜的机场：&lt;br /&gt;
+&lt;a href=&#34;%5BTitle%5D(https://xn--4gq62f52gdss.com/#%252Fregister%253Fcode%253Dpqv3XyvY)&#34;&gt;一元机场&lt;/a&gt; :11 块 / 年，50g / 月。这个价格不能要求太多&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90bHkuc2gvMjMxMzk3Mg==&#34;&gt;tly&lt;/span&gt; ： 3 天 2G,3 天签到一次可以继续使用，一直签一直能用。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubW9qaWUubWUvIy9yZWdpc3Rlcj9jb2RlPVdSdnZEM3p1&#34;&gt;魔戒&lt;/span&gt; :1 块 2G 试用套餐&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb3VjYXQudG9wL2luZGV4LnBocCMvcmVnaXN0ZXI/Y29kZT1EU1JtOURhTw==&#34;&gt;逗猫&lt;/span&gt;：一天 3G 试用&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbi5tZXNsLmNsb3VkLyMvcmVnaXN0ZXI/Y29kZT1Jc0w3a3VnYQ==&#34;&gt;mesl&lt;/span&gt; : 免费试用一天 1G。入口：上海电信、深圳阿里云、深圳移动、上海阿里云、东莞唯云、北京电信、佛山电信、嘉兴电信。落地：Misaka、Dmit、HKT、Akari、Kirino、Nearoute、Eons、MIKU、Amazon、Softbank 等。流媒体解锁挺好、线路类型很丰富的一个机场。月付 14 块 100G 起。试用后感觉不错可以付费使用。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zb2NrYm9vbS5iYXIvYXV0aC9yZWdpc3Rlcj9hZmZpZD01MTM4NzU=&#34;&gt;sockboom&lt;/span&gt; : 1 天 1G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mMDIxNjQyMGIuaW5maW5pc3BlZWQtMTgzYTAzYjAubmV0LyMvcmVnaXN0ZXI/Y29kZT1XTWFPc0FjNg==&#34;&gt;InfiniPort&lt;/span&gt; : 1 天 16G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW5lbC5rZWxlb2ZmaWNpYWwuY29tLyMvcmVnaXN0ZXI/Y29kZT1Xcm13VFVRUg==&#34;&gt;KELECLOUD&lt;/span&gt; : 1 天 1G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYW5pdS5lMzAwZGFuaXUudG9wLyMvcmVnaXN0ZXI/Y29kZT1PSWROeEtRdg==&#34;&gt;大牛机场&lt;/span&gt; ：1h1G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaGFyZS5lbGV2ZW4ub2JzZXJ2ZXIvYXV0aC9yZWdpc3Rlci5odG1sP2NvZGU9SVlSSg==&#34;&gt;奶瓶&lt;/span&gt; 2 小时试用&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXNoLmJpdHpuZXR1ay5jb20vIy9yZWdpc3Rlcj9jb2RlPU5tUTFPd09h&#34;&gt;bitznet&lt;/span&gt; : IEPL 专线中转。1 天 5G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXNoc3JjLmR1YWxuZXQuaW8vIy9yZWdpc3Rlcj9jb2RlPUt1bWwxTU5h&#34;&gt;dualnet&lt;/span&gt;: IEPL 专线中转。1 天 5G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb25zb2xlLmx5NTIwLm1lLyMvcmVnaXN0ZXI/Y29kZT1ab3o3OHYzTw==&#34;&gt;凌云网络&lt;/span&gt; 一天 1G 试用&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9weC5idDMub25lLyMvcmVnaXN0ZXI/Y29kZT1oWEd5VGJ3Uw==&#34;&gt;BT3rd-Speed&lt;/span&gt; 6 天 10G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90bHkuc2gvMjMxMzk3Mg==&#34;&gt;tly&lt;/span&gt; ： 3 天 2G,3 天签到一次可以继续使用，一直签一直能用。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jaHkuZml0LyMvcmVnaXN0ZXI/Y29kZT10T0VIUWFyeg==&#34;&gt;彩虹云&lt;/span&gt; : 2G 流量体验 - 一天有效期&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92M3NzeS54eXovIy9yZWdpc3Rlcj9jb2RlPUlJTDc5d1U5&#34;&gt;宝贝云&lt;/span&gt; : 1 天 2G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95eXN3LmFjeXVuLnRrLyMvcmVnaXN0ZXI/Y29kZT1GVTk5aUZpeA==&#34;&gt;ac 云&lt;/span&gt;： 一个月 100G, 需要自己去商店购买&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHJveHl2aXAueHl6LyMvcmVnaXN0ZXI/Y29kZT1Pd29aSThzQw==&#34;&gt;proxyvip&lt;/span&gt; 一天 60G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kaXdvbGVpLmNvbS8jL3JlZ2lzdGVyP2NvZGU9SXh1eVR3T2g=&#34;&gt;帝瓦雷&lt;/span&gt; 半年 5G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXh1bi5jbHViLw==&#34;&gt;大迅云&lt;/span&gt; : 5G 5 天&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pa3V1dS5ldS9hdXRoL3JlZ2lzdGVyP2NvZGU9M1dZZA==&#34;&gt;IKUUU VPN&lt;/span&gt; : 永久 50G 。小黑子露出鸡脚了。&lt;/p&gt;
+&lt;h3 id=&#34;节点池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#节点池&#34;&gt;#&lt;/a&gt; 节点池&lt;/h3&gt;
+&lt;p&gt;通用订阅的转换为对应的客户端订阅就好。&lt;a href=&#34;/%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5%E8%BD%AC%E6%8D%A2%E6%95%99%E7%A8%8B.html&#34;&gt;机场订阅链接转换收集与教程，支持机场 ss/ssr/v2ray 订阅转 clash\quantumultX 订阅&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;通用订阅：&lt;br /&gt;
+1）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdWIucG1zdWIubWUvYmFzZTY0&#34;&gt;https://sub.pmsub.me/base64&lt;/span&gt;   100 多条线路，ss+trojan+vmess 等&lt;/p&gt;
+&lt;p&gt;clash 订阅地址 (直接复制粘贴到 clash 订阅下载里面)：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdWIucG1zdWIubWUvY2xhc2gueWFtbA==&#34;&gt;https://sub.pmsub.me/clash.yaml&lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90ei5mb3ZpLnRrLw==&#34;&gt;https://tz.fovi.tk/&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;3）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdWIuc2hhcmVjZW50cmUub25saW5lL3N1Yg==&#34;&gt;https://sub.sharecentre.online/sub&lt;/span&gt; 12 条，vmess&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQuaW8vZW16Y2xhc2g=&#34;&gt;https://git.io/emzclash&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NoZmNoZjAzMDYvamVpZGlhbjQuMTgvbWFpbi80LjE4&#34;&gt;https://raw.githubusercontent.com/chfchf0306/jeidian4.18/main/4.18&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NoYXJtYWp2L3Zwbg==&#34;&gt;小三 VPN&lt;/span&gt;: 安卓 APP ，“不收费，不注册，不限速，不限流，不看广告不流氓，只想安静做个 VPN”。安卓软件采用 Clash 套壳，启动后抓包免费节点池&lt;/p&gt;
+&lt;p&gt;需要先翻墙才打得开或者看得到：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mcmVlLXNzLnNpdGU=&#34;&gt;free-ss&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sbmNuLm9yZy8=&#34;&gt;免费节点 lncn&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NzLnB5dGhvbmljLmxpZmUvZnVsbA==&#34;&gt;全部 SS 账号信息&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;可以直接打开：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0FsdmluOTk5OS9uZXctcGFjL3dpa2kvc3MlRTUlODUlOEQlRTglQjQlQjklRTglQjQlQTYlRTUlOEYlQjc=&#34;&gt;ss 免费账号&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;推荐几个便宜的机场&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推荐几个便宜的机场&#34;&gt;#&lt;/a&gt; 推荐几个便宜的机场&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW8ueXQvMEthZlRBbg==&#34;&gt;WgetCloud 官网链接&lt;/span&gt;：华为云入口 IEPl 专线机场，香港老板，速度和稳定性不错。有按量付费和自定义套餐选项。按量付费：1.2 元 / G&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW8ueXQvS0l2OVpKcQ==&#34;&gt;TAG 官网链接&lt;/span&gt; ：华为云入口 IEPl 专线机，特选套餐，200G / 年，140 块 / 年，200 + 节点。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW8ueXQvdEM2OW5LdQ==&#34;&gt;云翼网络&lt;/span&gt; IEPl 专线与公网中转 ss 机场。1 块 1 天 5G 试用。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW8ueXQvam80TkZ0Zg==&#34;&gt;翼游官网&lt;/span&gt;   ：ssr+trojan，全 IEPl 专线机场。有各个平台小白一键使用客户端。 每月 10 块 50G 流量 2 个客户端，随便用用没问题。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW8ueXQvTlZyTjhWag==&#34;&gt;kycloud 官网&lt;/span&gt; IEPL 专线 SS+Vmess 机场，老机场，CDN 优选入口，智能接入。也有海外用户节点（就是给在国外的人用的）。套餐不限同时在线客户端数。注册需要先购买。年付 150 每月 10G 流量起。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2JpdC5seS8zekZxOUxa&#34;&gt;泡泡狗&lt;/span&gt;: IEPL 专线 Shadowsocks 协议机场。前置佛山珠海走深圳的 iepl 到香港。过境口子大，解锁不错。月付与不限时共存。7.5 / 月 63G 流起.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iaXQubHkvM0RjVEsw&#34;&gt;edCloud 网链接 1&lt;/span&gt; ：vmess，深港专线机场。高性价比冷门节点机场。最便宜 10 块 / 50G 流量起。有两个特色：1. 主要是有 3 个回国节点：北京、上海和一个随机城市。白名单，常用国内流媒体使用。5、10 倍率。有回国线路的机场比较少。需要购买英文名称套餐 才有：“This 200G Monthly Plan is for Foreign Customers Outside China”，放这家主要是因为有回国的机场很少。2. 落地国家和节点多，130 + 国家，200 + 节点。且很多是低倍率。“权宜” 套餐以上才有。  &lt;a href=&#34;./回国机场EDCloud历史测速结果整合.html&#34; target=&#34;_blank&#34;&gt;回国机场 EDCloud 历史测速结果整合&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iaXQubHkvM0c5SzREeQ==&#34;&gt;Hutao 官网，需要代理打开&lt;/span&gt;：全 IEPL 专线传输，支持 SS+SSR++V2ray+Trojan 协议机场。推荐给需要按量付费或者是轻量用户。Trojan 节点数目比 SSR 少。新用户专属 95 折优惠码：hutao。9 块 / 月 50G 起。&lt;/p&gt;
+&lt;p&gt;具体介绍如下，需要更多稳定高速机场参考，建议收藏，避免急需：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2h3YW56L1NTLVNTUi1WMnJheS9ibG9iL21hc3Rlci9SRUFETUUubWQ=&#34;&gt;稳定快速专线付费 ssr/v2ray 订阅机场推荐&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;改hosts&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#改hosts&#34;&gt;#&lt;/a&gt; 改 hosts&lt;/h3&gt;
+&lt;p&gt;可以使用工具一键更改，也可以手动改，主要是很容易失效，需要经常改，比较麻烦&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2dvb2dsZWhvc3RzL2hvc3Rz&#34;&gt;googlehosts 改 hosts 教程&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;google镜像&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#google镜像&#34;&gt;#&lt;/a&gt; Google 镜像&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly94Z29vZ2xlLnh5ei8=&#34;&gt;https://xgoogle.xyz/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nb28ueGJ6eHMub3JnLw==&#34;&gt;https://goo.xbzxs.org/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nb29nbGUucG93ZXIzNjUubWwv&#34;&gt;https://google.power365.ml/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qc2FwaS51c3Roay5jbi8=&#34;&gt;https://jsapi.usthk.cn/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub29vcG4uY29tL3Rvb2wvZ2dzY2hvbGFyLw==&#34;&gt;https://www.ooopn.com/tool/ggscholar/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mc291ZnNvdS5jb20=&#34;&gt;https://fsoufsou.com&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nb2dvLndlYmJpbGxpb24uY24=&#34;&gt;https://gogo.webbillion.cn&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nb2dvZ2xlLmNmLw==&#34;&gt;https://gogogle.cf/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGFydGdvb2dsZS5zdGFydHBhZ2luYS5ubC8=&#34;&gt;https://startgoogle.startpagina.nl/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nb29nbGUud2lubWluaS5ldS5vcmcv&#34;&gt;https://google.winmini.eu.org/&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;其它博客&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其它博客&#34;&gt;#&lt;/a&gt; 其它博客&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vc3NyLXYycmF55LiT57q/5py65Zy65o6o6I2QLmh0bWw=&#34;&gt;自用付费稳定高速国外 ssr-v2ray-trojan 机场推荐&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v5Zu95aSWVlBT5Li75py65o6o6I2QLmh0bWw=&#34;&gt;适合翻墙建站国外 VPS 服务器主机推荐&lt;/span&gt; ：适合自己梯子，或者建站 VPS&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vdGVsZWdyYW0lRTclOTQlQjUlRTYlOEElQTUlRTklQTIlOTElRTklODElOTMlRTclQkUlQTQlRTclQkIlODQlRTYlOEUlQTglRTglOEQlOTAuaHRtbA==&#34;&gt;Telegram 频道推荐，新闻，NSFW 开车等&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vY2hhdGdwdOWll+Wjs+mVnOWDjy5odG1s&#34;&gt;ChatGPT 套壳镜像，免代理使用 ChatGPT&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vUXVhbnR1bXVsdFglRTUlQjAlOEYlRTclOTklQkQlRTclQUUlODAlRTUlOEQlOTUlRTQlQkQlQkYlRTclOTQlQTglRTYlOTUlOTklRTclQTglOEIuaHRtbA==&#34;&gt;QuantumultX 教程，机场订阅和去广告、会员破解、解锁 tiktok&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vSU9TLVNoYWRvd3JvY2tldOWwj+eBq+eureS9v+eUqOaVmeeoiy5odG1s&#34;&gt;Shadowrocket (小火箭) 使用教程软件共享账号免费破解下载、去广告规则、解锁 tiktok 等&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v5b2x6KeG56uZ5pS26ZuGLmh0bWw=&#34;&gt;影视站收集，视频会员破解&lt;/span&gt;  : 看盗版影视&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v5Y+R5Y2h572R5pS26ZuGLmh0bWw=&#34;&gt;发卡网收集&lt;/span&gt;  : 购买 apple id，google voice ，quantumultX/Shadowrocket/loon 等代理软件，迅雷视频外卖音乐 QQ 共享单车百度等会员，netflix、spotify 等&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5%E8%BD%AC%E6%8D%A2%E6%95%99%E7%A8%8B.html&#34; target=&#34;_blank&#34;&gt;机场订阅链接转换收集与教程，支持机场 ss/ssr/v2ray 订阅转 clash\quantumultX 订阅&lt;/a&gt;  ：把多个机场的节点放在一起。&lt;/p&gt;
+&lt;p&gt;windows 客户端：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vY2xhc2glRTYlOTUlOTklRTclQTglOEIuaHRtbA==&#34;&gt;clash for windows 使用教程、各个平台 Clash 客户端、各种 Clash 客户端&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;游戏客户端推荐：&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vbmV0Y2jkvb/nlKjmlZnnqIvvvIzlrp7njrDnnJ/Ct+WFqOWxgOeahOS7o+eQhi5odG1s&#34;&gt;netch 使用教程，实现真・全局的代理&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;安卓客户端推荐：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vQW5kcm9pZCVFMiU4MCU5NENsYXNoJTIwZm9yJTIwQW5kcm9pZCUyMCVFNCVCRCVCRiVFNyU5NCVBOCVFNiU5NSU5OSVFNyVBOCU4Qi5odG1s&#34;&gt;Clash for Android/CFA 使用教程&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vc3VyZmJvYXJk5L2/55So5pWZ56iLLmh0bWw=&#34;&gt;安卓 ssr-v2ray 代理客户 surfboard 使用教程&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vJUU1JUFFJTg5JUU1JThEJTkzc3NyLXYycmF5LXRyb2phbiVFNCVCQiVBMyVFNyU5MCU4NiVFNSVBRSVBMiVFNiU4OCVCNyVFNyVBQiVBRnYycmF5TiVFNCVCRCVCRiVFNyU5NCVBOCVFNiU5NSU5OSVFNyVBOCU4Qi5odG1s&#34;&gt;安卓 ssr-v2ray-trojan 代理客户端 v2rayN 使用教程&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vdjJyYXl0cm9qYW5zc3J4cmF55aSa5Y2P6K6u5a6J5Y2T5a6i5oi356uvLmh0bWw=&#34;&gt;v2ray trojan ssr xray 多协议安卓客户端收集&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20vJUU4JTgwJTgxJUU2JUFGJTlCJUU1JUFEJTkwUGFkYXZhbiVFNSU5QiVCQSVFNCVCQiVCNnNzdjJyYXklRTYlOUMlQkElRTUlOUMlQkElRTYlOUMlOEQlRTUlOEElQTElRTUlOTklQTglRTglQUUlQTIlRTklOTglODUlRTQlQjglOEVjbGFzaCVFOSU4NSU4RCVFNyVCRCVBRS5odG1s&#34;&gt;路由器老毛子 Padavan 固件 ss/v2ray 机场服务器订阅设置和 clash 配置&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;机场测速工具：&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qaWNoYW5ndHVpamlhbi5jb20v5py65Zy65rWL6YCf5LmLc3RhaXJzcGVlZHRlc3Tkvb/nlKjmlZnnqIsuaHRtbA==&#34;&gt;机场测速之 stairspeedtest 使用教程&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="记录生活" scheme="https://kls.red/categories/jlsh/" />
+        <category term="飞机场推荐" scheme="https://kls.red/categories/jlsh/%E9%A3%9E%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/" />
+        <category term="科学机场" scheme="https://kls.red/tags/%E7%A7%91%E5%AD%A6%E6%9C%BA%E5%9C%BA/" />
+        <category term="防失联" scheme="https://kls.red/tags/%E9%98%B2%E5%A4%B1%E8%81%94/" />
+        <category term="公益机场" scheme="https://kls.red/tags/%E5%85%AC%E7%9B%8A%E6%9C%BA%E5%9C%BA/" />
+        <category term="免费代理" scheme="https://kls.red/tags/%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86/" />
+        <updated>2023-07-05T17:53:52.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://kls.red/posts/46acedc6.html</id>
+        <title>Hexo 静态博客设置文章加密访问</title>
+        <link rel="alternate" href="https://kls.red/posts/46acedc6.html"/>
+        <content type="html">&lt;h3 id=&#34;引言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引言&#34;&gt;#&lt;/a&gt; 引言&lt;/h3&gt;
+&lt;p&gt;今天给大家推荐一款适用于 Hexo 的静态博客加密插件：hexo-blog-encrypt，搭配此插件你可以写一些私密博客，通过密码验证的方式让人不能随意浏览。&lt;/p&gt;
+&lt;h3 id=&#34;安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h3&gt;
+&lt;p&gt;npm&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-blog-encrypt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;或&lt;/p&gt;
+&lt;p&gt;yarn&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;yarn&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; hexo-blog-encrypt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;用法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用法&#34;&gt;#&lt;/a&gt; 用法&lt;/h3&gt;
+&lt;p&gt;快速使用&lt;/p&gt;
+&lt;p&gt;添加 password 字段到文章信息头 Front-matter，该字段用于设置文章访问密码：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;---&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: Hello World&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: &lt;span class=&#34;token number&#34;&gt;2016&lt;/span&gt;-03-30 &lt;span class=&#34;token number&#34;&gt;21&lt;/span&gt;:18:02&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;password: hello&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;---&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;（密码就是 password 字段对应的值 hello）&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;---&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: Hello World&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: &lt;span class=&#34;token number&#34;&gt;2016&lt;/span&gt;-03-30 &lt;span class=&#34;token number&#34;&gt;21&lt;/span&gt;:12:21&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;password: hello&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;abstract:  &lt;span class=&#34;token comment&#34;&gt;# 用于设置加密文章显示的摘要。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;message: &lt;span class=&#34;token comment&#34;&gt;# 输入密码提示。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;wrong_pass_message: &lt;span class=&#34;token comment&#34;&gt;# 输入错误提示。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;---&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="网站搭建" scheme="https://kls.red/categories/wzdj/" />
+        <category term="Hexo部署教程" scheme="https://kls.red/categories/wzdj/Hexo%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/" />
+        <category term="网站搭建" scheme="https://kls.red/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" />
+        <category term="Hexo" scheme="https://kls.red/tags/Hexo/" />
+        <category term="文章加密插件" scheme="https://kls.red/tags/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E6%8F%92%E4%BB%B6/" />
+        <updated>2023-07-05T13:22:14.000Z</updated>
+    </entry>
     <entry>
         <id>https://kls.red/posts/cbd7e20a.html</id>
         <title>Centos7 更换国内源</title>
@@ -32,7 +193,7 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-O&lt;/span&gt; /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;生成缓存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成缓存&#34;&gt;#&lt;/a&gt; 生成缓存&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;yum clean all  &lt;span class=&#34;token comment&#34;&gt;# 清除 yum 缓存&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;yum makecache  &lt;span class=&#34;token comment&#34;&gt;# 重建缓存&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;yum &lt;span class=&#34;token parameter variable&#34;&gt;-y&lt;/span&gt; update  &lt;span class=&#34;token comment&#34;&gt;# 升级所有包&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="系统配置" scheme="https://kls.red/categories/xtpz/" />
-        <category term="Linux" scheme="https://kls.red/categories/xtpz/course-1/" />
+        <category term="Linux" scheme="https://kls.red/categories/xtpz/Linux/" />
         <category term="Linux" scheme="https://kls.red/tags/Linux/" />
         <category term="Centos7更换国内源" scheme="https://kls.red/tags/Centos7%E6%9B%B4%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/" />
         <updated>2023-07-04T09:49:28.000Z</updated>
@@ -80,9 +241,9 @@
 &lt;h4 id=&#34;7再次连接即可成功&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7再次连接即可成功&#34;&gt;#&lt;/a&gt; （7）再次连接即可成功！&lt;/h4&gt;
 </content>
         <category term="系统配置" scheme="https://kls.red/categories/xtpz/" />
-        <category term="Docker" scheme="https://kls.red/categories/xtpz/course-2/" />
+        <category term="Docker" scheme="https://kls.red/categories/xtpz/Docker/" />
+        <category term="Docker" scheme="https://kls.red/tags/Docker/" />
         <category term="MySQL安装" scheme="https://kls.red/tags/MySQL%E5%AE%89%E8%A3%85/" />
-        <category term="docker" scheme="https://kls.red/tags/docker/" />
         <updated>2023-07-04T09:37:55.000Z</updated>
     </entry>
     <entry>
@@ -94,7 +255,7 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#中国科技大学&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.ustc.edu.cn/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#网易云 163&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.163.com/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#阿里云&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.aliyun.com/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#清华同方&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sed&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;s/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g&#39;&lt;/span&gt;/etc/apt/sources.list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h5 id=&#34;3-sudo-apt-get-update-更新索引以生效&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-sudo-apt-get-update-更新索引以生效&#34;&gt;#&lt;/a&gt; 3、 &lt;code&gt;sudo apt-get update &lt;/code&gt; 更新索引以生效。&lt;/h5&gt;
 </content>
         <category term="系统配置" scheme="https://kls.red/categories/xtpz/" />
-        <category term="Linux" scheme="https://kls.red/categories/xtpz/course-1/" />
+        <category term="Linux" scheme="https://kls.red/categories/xtpz/Linux/" />
         <category term="Linux" scheme="https://kls.red/tags/Linux/" />
         <category term="Debian更换国内源" scheme="https://kls.red/tags/Debian%E6%9B%B4%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/" />
         <updated>2023-07-04T00:17:06.000Z</updated>
@@ -149,7 +310,7 @@
 &lt;p&gt;以上示例展示了如何在一个 Screen 会话中同时运行多个程序，并在不同的窗口和面板中查看它们的输出。您可以根据自己的需求，使用 Screen 来管理终端会话，提高工作效率。&lt;/p&gt;
 </content>
         <category term="系统配置" scheme="https://kls.red/categories/xtpz/" />
-        <category term="Linux" scheme="https://kls.red/categories/xtpz/course-1/" />
+        <category term="Linux" scheme="https://kls.red/categories/xtpz/Linux/" />
         <category term="Linux" scheme="https://kls.red/tags/Linux/" />
         <category term="远程ssh" scheme="https://kls.red/tags/%E8%BF%9C%E7%A8%8Bssh/" />
         <category term="后台运行" scheme="https://kls.red/tags/%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C/" />
@@ -379,14 +540,15 @@ linux 下安装 cloudnas，相当于是挂了一块硬盘到 linux 下，硬盘�
 &lt;strong&gt;作者电报群：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90Lm1lL2Nsb3VkbmFzY2hhdA==&#34;&gt;https://t.me/cloudnaschat&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="食用系列" scheme="https://kls.red/categories/syxl/" />
-        <category term="Openwrt" scheme="https://kls.red/categories/syxl/course-1/" />
-        <category term="openwrt" scheme="https://kls.red/tags/openwrt/" />
-        <category term="clouddrive" scheme="https://kls.red/tags/clouddrive/" />
+        <category term="Clouddrive" scheme="https://kls.red/categories/syxl/Clouddrive/" />
+        <category term="Clouddrive" scheme="https://kls.red/tags/Clouddrive/" />
+        <category term="Openwrt" scheme="https://kls.red/tags/Openwrt/" />
+        <category term="Docker" scheme="https://kls.red/tags/Docker/" />
         <updated>2023-07-04T00:04:00.000Z</updated>
     </entry>
     <entry>
         <id>https://kls.red/posts/6346bbd.html</id>
-        <title>clouddrive在linux（云主机/vps）下挂载过程</title>
+        <title>Clouddrive在linux（云主机/vps）下挂载过程</title>
         <link rel="alternate" href="https://kls.red/posts/6346bbd.html"/>
         <content type="html">&lt;h4 id=&#34;基本环境&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本环境&#34;&gt;#&lt;/a&gt; 基本环境&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;ps：&lt;/strong&gt;&lt;/p&gt;
@@ -462,9 +624,9 @@ linux 下安装 cloudnas，相当于是挂了一块硬盘到 linux 下，硬盘�
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/etc/init.d/ufw stop&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;宝塔面板放行端口，具体百度即可&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;vps 服务器可结合上面的方法，或者在安全组中放行 9897 端口，宝塔面板放行该端口&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="系统配置" scheme="https://kls.red/categories/xtpz/" />
-        <category term="Linux" scheme="https://kls.red/categories/xtpz/course-1/" />
-        <category term="clouddrive" scheme="https://kls.red/tags/clouddrive/" />
+        <category term="食用系列" scheme="https://kls.red/categories/syxl/" />
+        <category term="Clouddrive" scheme="https://kls.red/categories/syxl/Clouddrive/" />
+        <category term="Clouddrive" scheme="https://kls.red/tags/Clouddrive/" />
         <category term="Linux" scheme="https://kls.red/tags/Linux/" />
         <updated>2023-07-03T09:12:24.000Z</updated>
     </entry>
@@ -503,9 +665,9 @@ linux 下安装 cloudnas，相当于是挂了一块硬盘到 linux 下，硬盘�
 &lt;figure class=&#34;highlight ruby&#34;&gt;&lt;figcaption data-lang=&#34;ruby&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo performance &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy0&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_governor&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo performance &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy1&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_governor&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo performance &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy2&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_governor&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo performance &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy3&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_governor&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy0&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy1&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy2&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy3&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy0&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy1&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy2&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;echo &lt;span class=&#34;token number&#34;&gt;2700000&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;sys&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;devices&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpu&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;cpufreq&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;policy3&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;scaling_min_freq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;其他系统上高性能模式，例如 centos 或 ubuntu&lt;/strong&gt; &lt;a href=&#34;http://xn--blog-9d0ix46agy8cj1fne.kls.red/&#34;&gt;&lt;strong&gt;转载请注明 blog.kls.red&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
 </content>
         <category term="系统配置" scheme="https://kls.red/categories/xtpz/" />
-        <category term="Openwrt" scheme="https://kls.red/categories/xtpz/course-1/" />
-        <category term="openwrt" scheme="https://kls.red/tags/openwrt/" />
-        <category term="cpu高频空载模式" scheme="https://kls.red/tags/cpu%E9%AB%98%E9%A2%91%E7%A9%BA%E8%BD%BD%E6%A8%A1%E5%BC%8F/" />
+        <category term="Openwrt" scheme="https://kls.red/categories/xtpz/Openwrt/" />
+        <category term="Openwrt" scheme="https://kls.red/tags/Openwrt/" />
+        <category term="Cpu高频空载模式" scheme="https://kls.red/tags/Cpu%E9%AB%98%E9%A2%91%E7%A9%BA%E8%BD%BD%E6%A8%A1%E5%BC%8F/" />
         <updated>2023-07-01T13:13:18.802Z</updated>
     </entry>
 </feed>
