@@ -7,6 +7,19 @@
     "home_page_url": "https://kls.red",
     "items": [
         {
+            "id": "https://kls.red/posts/870f2d70.html",
+            "url": "https://kls.red/posts/870f2d70.html",
+            "title": "Hexo删除插件的命令与使用办法",
+            "date_published": "2023-07-06T08:47:28.000Z",
+            "content_html": "<h3 id=\"前言\"><a class=\"anchor\" href=\"#前言\">#</a> 前言</h3>\n<p>在折腾 hexo 的时候安装一些想要的 hexo 插件，有时候安装的插件会和已有的插件或者 hexo 不兼容起冲突。</p>\n<p>然后自己在执行 hexo 命令的时候，会出现一堆报错信息。</p>\n<h3 id=\"列出已安装插件\"><a class=\"anchor\" href=\"#列出已安装插件\">#</a> 列出已安装插件</h3>\n<p>执行命令：</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">npm</span> list</pre></td></tr></table></figure><p><img data-src=\"http://oss.mudanbao.cn/webpic/image-20230706172515458.png\" alt=\"image-20230706172515458\" /></p>\n<h3 id=\"卸载命令\"><a class=\"anchor\" href=\"#卸载命令\">#</a> 卸载命令</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">npm</span> uninstall 插件名</pre></td></tr></table></figure><p>然后删除相关配置和文件</p>\n<p>配置文件中有 PLugins 模块，删除对应的插件设置；</p>\n<p>删除 node_modules/ 目录下对应的插件文件</p>\n",
+            "tags": [
+                "网站搭建",
+                "Hexo部署教程",
+                "Hexo删除插件命令",
+                "Hexo插件卸载"
+            ]
+        },
+        {
             "id": "https://kls.red/posts/cef831ca.html",
             "url": "https://kls.red/posts/cef831ca.html",
             "title": "黑群晖引导制作推荐",
