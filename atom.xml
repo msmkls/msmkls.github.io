@@ -207,8 +207,8 @@
 </content>
         <category term="系统配置" scheme="https://kls.red/categories/xtpz/" />
         <category term="Docker" scheme="https://kls.red/categories/xtpz/Docker/" />
-        <category term="MySQL安装" scheme="https://kls.red/tags/MySQL%E5%AE%89%E8%A3%85/" />
         <category term="Docker" scheme="https://kls.red/tags/Docker/" />
+        <category term="MySQL安装" scheme="https://kls.red/tags/MySQL%E5%AE%89%E8%A3%85/" />
         <updated>2023-07-04T09:37:55.000Z</updated>
     </entry>
     <entry>
@@ -507,8 +507,8 @@ linux 下安装 cloudnas，相当于是挂了一块硬盘到 linux 下，硬盘�
         <category term="食用系列" scheme="https://kls.red/categories/syxl/" />
         <category term="Clouddrive" scheme="https://kls.red/categories/syxl/Clouddrive/" />
         <category term="Clouddrive" scheme="https://kls.red/tags/Clouddrive/" />
-        <category term="Docker" scheme="https://kls.red/tags/Docker/" />
         <category term="Openwrt" scheme="https://kls.red/tags/Openwrt/" />
+        <category term="Docker" scheme="https://kls.red/tags/Docker/" />
         <updated>2023-07-04T00:04:00.000Z</updated>
     </entry>
     <entry>
