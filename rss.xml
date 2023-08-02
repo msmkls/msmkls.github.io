@@ -10,8 +10,8 @@
         </author>
         <description>日常学习，点滴记录，软硬件食用攻略</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 11 Jul 2023 01:10:58 +0800</pubDate>
-        <lastBuildDate>Tue, 11 Jul 2023 01:10:58 +0800</lastBuildDate>
+        <pubDate>Sat, 05 Aug 2023 19:02:08 +0800</pubDate>
+        <lastBuildDate>Sat, 05 Aug 2023 19:02:08 +0800</lastBuildDate>
         <category term="NAS" />
         <category term="群晖" />
         <category term="openwrt" />
@@ -29,7 +29,7 @@
             <category term="Openwrt" scheme="https://kls.red/categories/xtpz/Openwrt/" />
             <category term="Openwrt" scheme="https://kls.red/tags/Openwrt/" />
             <category term="Cpu高频空载模式" scheme="https://kls.red/tags/Cpu%E9%AB%98%E9%A2%91%E7%A9%BA%E8%BD%BD%E6%A8%A1%E5%BC%8F/" />
-            <pubDate>Tue, 11 Jul 2023 01:10:58 +0800</pubDate>
+            <pubDate>Sat, 05 Aug 2023 19:02:08 +0800</pubDate>
             <description><![CDATA[ &lt;h4 id=&#34;简述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简述&#34;&gt;#&lt;/a&gt; &lt;strong&gt;简述&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;很多人在编译后或者好不容易拿到符合自己需求的系统包后，体验一直上不去，甚至有些使用 j1900CPU 感觉还不如硬件路由&lt;/p&gt;
 &lt;p&gt;例如，开网页加载慢半拍、视频加载速度上不去的感觉（特别是油管），很大的原因都是由省电模式导致的。&lt;/p&gt;
